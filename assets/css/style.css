@@ -1,0 +1,45 @@
+#header {
+    width: 100%;
+    height: auto;
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+#readout-display {
+    width: 100%;
+    height:50px;
+}
+
+.timer{
+    width: 100px;
+    height: 50px;
+}
+.moves{
+    width: 100px;
+    height: 50px;
+}
+.mistakes{
+    width: 100px;
+    height: 50px;
+}
+
+#game-grid {
+    margin: auto;
+    width: 75%;
+    height: 200px;
+    background-color: lightblue;
+}
+
+#options {
+    width: 100%;
+    height:50px;
+    background-color: blue;
+}
+
+.btn {
+    margin: auto;
+}
+
