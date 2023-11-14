@@ -11,25 +11,25 @@
     <header id="header">
         <h1>Card Matching Game</h1>
     </header>
-    <section id="readout-display">
-        <div class="row g-0" >
-            <div class="col-4 g-0 timer container-fluid" style="background-color:red;"></div>
-            <div class="col-4 g-0 moves container-fluid" style="background-color:blue;"></div>
-            <div class="col-4 g-0 mistakes container-fluid" style="background-color:green;"></div>
-        </div>
+    <section id="readout-display" class="row g-0 container-fluid">
+            <div class="col-4 g-0 timer"><i class="fa-regular fa-hourglass"></i><span>Timer</span></div>
+            <div class="col-4 g-0 score"><i class="fa-solid fa-bullseye"></i><span>Score</span></div>
+            <div class="col-4 g-0 moves"><i class="fa-solid fa-angles-right"></i><span>Moves</span></div>
     </section>
-    <section id="game-grid">
-        <div class="row g-0">
-            <div class="col g-0">
-
-            </div>
-        </div>
-
+    <section id="game-grid" class="row g-0 container-fluid">
     </section>
+
+    <section id="start-game-btn">
+        <button type="button" class="btn btn-success">Start Game</button>
+    </section>
+    
     <!--Base button code sourced from Bootstrap-->
-    <button type="button" class="btn btn-success">Success</button>
-    <section id="options">
-        <div></div>
+    
+    <section id="difficulty" class="row g-0 container-fluid">
+        <h3>Choose Difficulty</h3>
+        <button type="button" class="col-4 g-0 btn btn-primary">Easy</button>
+        <button type="button" class="col-4 g-0 btn btn-warning">Medium</button>
+        <button type="button" class="col-4 g-0 btn btn-danger">Hard</button>
     </section>
     <footer id="footer">
 

@@ -1,7 +1,6 @@
 #header {
     width: 100%;
     height: auto;
-    background-color: lightblue;
 }
 
 h1 {
@@ -9,37 +8,32 @@ h1 {
 }
 
 #readout-display {
-    width: 100%;
-    height:50px;
+    margin: auto;
+    width: 75%;
+    text-align: center;
 }
 
-.timer{
-    width: 100px;
-    height: 50px;
-}
-.moves{
-    width: 100px;
-    height: 50px;
-}
-.mistakes{
-    width: 100px;
-    height: 50px;
+#readout-display span {
+    margin-top: 50px;
 }
 
 #game-grid {
     margin: auto;
     width: 75%;
+    height: 100%;
     height: 200px;
     background-color: lightblue;
 }
 
-#options {
-    width: 100%;
-    height:50px;
-    background-color: blue;
+#start-game-btn {
+    margin: auto;
+    width: 75%;
+    text-align: center;
 }
 
-.btn {
+#difficulty {
     margin: auto;
+    width: 75%;
+    text-align: center;
 }
 
