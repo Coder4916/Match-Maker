@@ -26,15 +26,15 @@ h1 {
     display: flex;
     margin: auto;
     flex-wrap: wrap;
-    width: 400px;
-    height: 400px;
+    width: 900px;
+    height: 900px;
     perspective: 1000px;
 }
 
 .card {
     position: relative;
-    width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
+    width: calc(20% - 10px);
+    height: calc(25% - 10px);
     margin: 5px;
     transform: scale(1);
     transform-style: preserve-3d;
