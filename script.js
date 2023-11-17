@@ -1,47 +1,9 @@
-document.addEventListener("DOMContentLoaded", function(){
-    let myButtons = document.getElementsByTagName("button");
+let cards = document.getElementsByClassName('card');
+let hasFlippedCard = false;
+let firstCard, secondCard;
 
-    for (let button of myButtons){
-        button.addEventListener("click", function(){
-            if (this.getAttribute("data-type") === "start-game"){
-                alert("You clicked start game");
-            }
-            else {
-                let difficulty = this.getAttribute("data-type")
-                alert(`You clicked ${difficulty}`);
-            }
-        })
-    }
-})
-
-function startGame(){
-
+function flipCard() {
+    this.classList.toggle('flip')
 }
 
-function checkCards(){
-
-}
-
-function checkCorrectCards(){
-
-}
-
-function logScore(){
-
-}
-
-function logNoMatch(){
-
-}
-
-function displayEasyGrid(){
-
-}
-
-function displayMediumGrid(){
-
-}
-
-function displayHardGrid(){
-    
-}
+cards.forEach(card => card.addEventListener('click', flipCard))
