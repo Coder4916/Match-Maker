@@ -16,17 +16,15 @@ function flipCard() {
 
     cardFlipped = false;
     secondCard = this;
+
     checkCardsMatch();
-    
 }
 
 function checkCardsMatch() {
-    if (firstCard.getAttribute("framework") ===
-        secondCard.getAttribute("framework")) {
-        collectCards();
-    } else {
-        returnCards();
-    }
+
+    let isMatch = firstCard.dataset.shape === secondCard.getAttribute('shape');
+
+    isMatch ? collectCards() : returnCards();
 }
 
 function collectCards() {
@@ -35,6 +33,7 @@ function collectCards() {
 }
 
 function returnCards() {
+
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
