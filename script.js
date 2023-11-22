@@ -1,10 +1,12 @@
 let cards = document.querySelectorAll('.card'); /* All html elements within the DOM with the class of card are contained within the cards variable*/
 cards.forEach(card => card.addEventListener('click', flipCard)); /* A click event listener is added to each card, so that the functions can be applied to them */
 
+
 let cardFlipped = false; /* cardFlipped is initially set to false*/
 let lockBoard = false; /* The game grid is not locked (Prevents a second pair of cards from being flipped while the first pair is checked for a match)*/
 let firstCard, secondCard; /* A variable, which initiates firstCard and secondCard */
-let score = 0
+let moves = 0;
+let score = 0;
 
 function flipCard() { /* A function to monitor the first and second cards clicked on, with the 'this' event used to monitor the clicks. */
 
@@ -22,6 +24,8 @@ function flipCard() { /* A function to monitor the first and second cards clicke
 
     cardFlipped = false; /* cardFlipped is equal to false */
     secondCard = this; /* Acknowledge second card is flipped */
+    moves++;
+    document.querySelector('.moves').textContent = moves;
 
     checkCardsMatch(); /* A function within the flipCard function, which evaluates whether the two cards flipped are a match */
 }
@@ -29,15 +33,18 @@ function flipCard() { /* A function to monitor the first and second cards clicke
 function checkCardsMatch() { /* A function to check whether the first and second cards match */
 
     let isMatch = firstCard.dataset.shape === secondCard.dataset.shape; /* isMatch variable which evaluates whether the dataset (image) in index.html, on the first card clicked by the user, matches the second card clicked */
-
     isMatch ? collectCards() : returnCards(); /* Ternary Operator to decide whether to collect the cards, or return them to original positions (unflipped). */
+    if (isMatch) {
+        score++;
+        document.querySelector('.score').textContent = score;
+    }
 }
 
 function collectCards() { /* A function to collect/keep the cards flipped, once they have been matched correctly by the player */
     firstCard.removeEventListener('click', flipCard); 
     secondCard.removeEventListener('click', flipCard); /* The function removes the click event listeners from both cards if they are a match. */
 
-    resetCards() /* A function within the collectCards function which unlocks the board, and unflips both cards if they are not a matching pair */
+    resetCards(); /* The conditions of cardFlipped and lockBoard are set to false, and first/secondCard to null */
 }
 
 function returnCards() { /* A function to return any un-matched cards to their original position */
@@ -65,3 +72,8 @@ function resetCards(){ /* A function to reset the conditions of the cards if the
         card.style.order = shuffleCards; /* The cards are the assigned random numbers/positions in the game grid and shuffled */
     })
 })();
+
+
+
+
+
