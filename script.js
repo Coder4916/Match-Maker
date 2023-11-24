@@ -1,12 +1,30 @@
 let cards = document.querySelectorAll('.card'); /* All html elements within the DOM with the class of card are contained within the cards variable*/
 cards.forEach(card => card.addEventListener('click', flipCard)); /* A click event listener is added to each card, so that the functions can be applied to them */
 
-
 let cardFlipped = false; /* cardFlipped is initially set to false*/
-let lockBoard = false; /* The game grid is not locked (Prevents a second pair of cards from being flipped while the first pair is checked for a match)*/
+let lockBoard = true; /* The game grid is locked (Prevents a pair of cards from being flipped while the first pair is checked for a match)*/
 let firstCard, secondCard; /* A variable, which initiates firstCard and secondCard */
 let moves = 0;
 let score = 0;
+let time = 0;
+
+let startGame = document.querySelector('#startBtn')
+startGame.addEventListener('click', function(){
+    interval = setInterval(function () {
+        let timer = document.querySelector('.timer');
+        timer.innerHTML = time++;
+    },1000);
+})
+        
+//* clearInterval(interval) *//
+
+function play() {
+    let myButton = document.getElementById('startBtn').addEventListener('click', function(){
+        if(myButton.getAttribute(this.dataset) === 'start-game'){
+            startGame = true;
+        }
+    });
+}
 
 function flipCard() { /* A function to monitor the first and second cards clicked on, with the 'this' event used to monitor the clicks. */
 
