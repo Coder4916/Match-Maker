@@ -8,6 +8,47 @@ body {
     height: auto;
 }
 
+.navbar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: hsl(187, 55%, 39%, 0.5);
+}
+
+.navbar ul {
+    width: 100%;
+}
+
+.navbar li {
+    font-size: 18px;
+}
+
+.hvr-shutter-out-horizontal {
+    background-color: hsl(187, 55%, 39%, 0.5);
+}
+
+.hvr-shutter-out-horizontal:before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-item a {
+    margin: auto;
+    padding: 15px;
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto", serif, sans-serif, monospace;
+    color: rgb(231, 223, 223) !important;
+}
+
+.nav-item a i {
+    font-size: 18px;
+}
+
+.active {
+    background-color: hsl(180, 3%, 45%, 0.5);
+}
+
 h1 {
     text-align: center;
 }
