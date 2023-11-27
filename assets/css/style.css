@@ -1,18 +1,13 @@
-body {
-    height: 100%;
-    background-color: blue;
-}
-
 #header {
     width: 100%;
     height: auto;
 }
 
 .navbar {
-    margin: 0;
+    margin: auto 0;
     padding: 0;
     width: 100%;
-    background-color: hsl(187, 55%, 39%, 0.5);
+    background-color: green;
 }
 
 .navbar ul {
@@ -20,11 +15,11 @@ body {
 }
 
 .navbar li {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .hvr-shutter-out-horizontal {
-    background-color: hsl(187, 55%, 39%, 0.5);
+    background-color: green;
 }
 
 .hvr-shutter-out-horizontal:before {
@@ -32,7 +27,7 @@ body {
 }
 
 .nav-item a {
-    margin: auto;
+    margin: auto 0;
     padding: 15px;
     width: 100%;
     text-decoration: none;
@@ -42,25 +37,36 @@ body {
 }
 
 .nav-item a i {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .active {
-    background-color: hsl(180, 3%, 45%, 0.5);
+    background-color: hsl(180, 3%, 45%, 0.4);
 }
 
-h1 {
+#welcome-section {
+    width: 75%;
+    height: 100px;
     text-align: center;
+    margin: auto;
+    background-color: orange;
 }
 
 #readout-display {
     margin: auto;
-    width: 75%;
+    padding: 15px;
+    color: rgb(231, 223, 223);
     text-align: center;
+    font-family: "Roboto", serif, sans-serif, monospace;
+    background-color: lightcoral;
+    height: auto;
+    width: 100%;
 }
 
-#readout-display span {
-    margin-top: 50px;
+#game-section {
+    width: 75%;
+    margin: auto;
+    background-color: lightblue;
 }
 
 #game-grid {

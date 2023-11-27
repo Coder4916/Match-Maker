@@ -4,25 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>$(document).ready(function () {
+            $("#modalPageLoad").modal('show');
+        });</script>
+
     <link rel="stylesheet" href="/assets/css/style.css">
-    <title>card-match-game</title>
+    <title>Match-Maker</title>
 </head>
 
 <body>
+    
     <header id="header">
         <div class="row g-0 container-fluid">
-            <a href="index.html" class="col-md-3">
-                <picture>
-                    <img class="game-logo" src="" alt="">
-                </picture>
-            </a>
-            <div class="col-md-9 title-nav-container">
+            <div class="col nav-container">
                 <div class="row g-0">
-                    <div class="col">
+                    <div class="col g-0">
                         <nav class="navbar navbar-expand-sm">
-                            <div class="container-fluid g-0">
+                            <div class="container-fluid">
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
                                     aria-label="Toggle navigation">
@@ -37,12 +41,12 @@
                                         </li>
                                         <li class="col-sm-4 list-inline-item nav-item">
                                             <a href="playGame.html" class="nav-link hvr-shutter-out-horizontal active"><i
-                                                    class="fa-solid fa-book" aria-hidden="true"></i><span>
+                                                    class="fa-solid fa-play" aria-hidden="true"></i><span>
                                                     Play Game</span></a>
                                         </li>
                                         <li class="col-sm-4 list-inline-item nav-item">
-                                            <a href="" class="nav-link hvr-shutter-out-horizontal"><i
-                                                    class="fa-solid fa-phone" aria-hidden="true"></i><span>
+                                            <a href="howToPlay.html" class="nav-link hvr-shutter-out-horizontal"><i
+                                                    class="fa-solid fa-circle-question" aria-hidden="true"></i><span>
                                                     How to play</span></a>
                                         </li>
                                     </ul>
@@ -58,14 +62,14 @@
     <!-- A readout display which will show the player's moves taken, score/matched cards and time taken -->
 
     <section id="readout-display" class="row g-0 container-fluid">
-        <div class="col-4 g-0"><i class="fa-regular fa-hourglass"></i><span class="timer"></span></div>
-        <div class="col-4 g-0"><i class="fa-solid fa-bullseye"></i><span class="score"></span></div>
-        <div class="col-4 g-0"><i class="fa-solid fa-angles-right"></i><span class="moves"></span></div>
+        <div class="col-4 g-0"><i class="fa-regular fa-hourglass"></i><span class="timer">  Time: 0</span></div>
+        <div class="col-4 g-0"><i class="fa-solid fa-bullseye"></i><span class="score">  Score: 0</span></div>
+        <div class="col-4 g-0"><i class="fa-solid fa-angles-right"></i><span class="moves">  Moves: 0</span></div>
     </section>
-
+ 
     <!-- The section below contains all card elements required, which javascript will use to create the memory game -->
-
-    <section id="game-grid" class="container-fluid">
+<section id="game-section">
+    <div id="game-grid" class="container-fluid">
         <div class="card" data-shape="circle">
             <img class="card-front" src="/assets/images/circle.jpg" alt="">
             <img class="card-rear" src="/assets/images/pattern.jpg" alt="">
@@ -146,21 +150,45 @@
             <img class="card-front" src="/assets/images/triangle.jpg" alt="">
             <img class="card-rear" src="/assets/images/pattern.jpg" alt="">
         </div>
-    </section>
-
+    </div>
+</section>
+    
     <!-- A reset game button, imported from bootstrap -->
 
     <section id="startBtn">
         <button data-type="start-game" type="button" class="btn btn-success">Start Game</button>
     </section>
 
-    <!-- Imported javascript from Bootstrap, Fontawesome and script.js. -->
+<div class="modal" tabindex="-1" id="modalPageLoad">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Match-Maker/h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Match the cards to win the game!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Play Game</button>
+            </div>
+        </div>
+    </div>
+</div>
 
+    <!-- Imported javascript from Bootstrap, Fontawesome and script.js. -->
+    
     <script src="/script.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/307651c16d.js" crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
