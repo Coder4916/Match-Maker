@@ -6,21 +6,20 @@ let lockBoard = false; /* The game grid is locked (Prevents a pair of cards from
 let firstCard, secondCard; /* A variable, which initiates firstCard and secondCard */
 let moves = 0;
 let score = 0;
-let time = 90;
+let time = 0;
 
-let timer = document.querySelector('').addEventListener('click', function (){
-        interval = setInterval(function (){
-                let timer = document.querySelector('.timer');
-                timer.innerHTML = `Time: ${time--}`;
-        }, 1000);  
+let timer = document.querySelector('#playButton').addEventListener('click', function () {
+    interval = setInterval(function () {
+        timer = document.querySelector('.timer').textContent = `Time: ${time++}`;
+    }, 1000);
 });
 
 function flipCard() { /* A function to monitor the first and second cards clicked on, with the 'this' event used to monitor the clicks. */
-
+        
     if (lockBoard) return; /* If the board is now locked (true) because 2 cards have already been flipped, return the flipcard function*/
 
     if (this === firstCard) return; /* If the card clicked (this card) is the first card clicked, return the flipCard function*/
-
+    
     this.classList.add('flip'); /* The card clicked on by the user (this card) has a class appended to it, the 'flip' class, which rotates the card 180 degrees along it's Y axis (style.css).*/
     if (!cardFlipped) { /* If cardFlipped is false */
         cardFlipped = true; /* Make cardFlipped true */
@@ -35,7 +34,7 @@ function flipCard() { /* A function to monitor the first and second cards clicke
     document.querySelector('.moves').innerHTML = `Moves:${moves}`;
 
     checkCardsMatch(); /* A function within the flipCard function, which evaluates whether the two cards flipped are a match */
-}
+};
 
 function checkCardsMatch() { /* A function to check whether the first and second cards match */
 
@@ -44,11 +43,11 @@ function checkCardsMatch() { /* A function to check whether the first and second
     if (isMatch) {
         score++;
         document.querySelector('.score').innerHTML = `Score:${score}`;
-    }
+    } 
 }
 
 function collectCards() { /* A function to collect/keep the cards flipped, once they have been matched correctly by the player */
-    firstCard.removeEventListener('click', flipCard); 
+    firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard); /* The function removes the click event listeners from both cards if they are a match. */
 
     resetCards(); /* The conditions of cardFlipped and lockBoard are set to false, and first/secondCard to null */
@@ -62,11 +61,11 @@ function returnCards() { /* A function to return any un-matched cards to their o
         firstCard.classList.remove('flip'); /* 'Flip' class removed from first card */
         secondCard.classList.remove('flip'); /* 'Flip' class removed from second card */
 
-        resetCards() /* The conditions of cardFlipped and lockBoard are set to false, and first/secondCard to null */
+        resetCards(); /* The conditions of cardFlipped and lockBoard are set to false, and first/secondCard to null */
     }, 1500); /* The setTimeout function is set to 1500 milliseconds, to give the cards time to show before they are 'un-flipped' */
 }
 
-function resetCards(){ /* A function to reset the conditions of the cards if they don't match */
+function resetCards() { /* A function to reset the conditions of the cards if they don't match */
     cardFlipped = false;
     lockBoard = false;
     firstCard = null;
@@ -77,16 +76,5 @@ function resetCards(){ /* A function to reset the conditions of the cards if the
     cards.forEach(card => { /* Using the cards variable, the arrow function loops through each card*/
         let shuffleCards = Math.floor(Math.random() * 20); /* While looping through each card in the game grid, a random number is also created for each card */
         card.style.order = shuffleCards; /* The cards are the assigned random numbers/positions in the game grid and shuffled */
-    })
+    });
 })();
-
-function gameAlert(){
-    for (let i of cards.length)
-    if (time > 0 && score === 10) {
-        let winAlert = alert("Well done! You matched all of the cards!");
-        return;
-    } else {
-        alert("Bad luck, you didn't match all the cards in time.");
-    }
-}
-
