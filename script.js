@@ -6,11 +6,18 @@ let lockBoard = false; /* The game grid is locked (Prevents a pair of cards from
 let firstCard, secondCard; /* A variable, which initiates firstCard and secondCard */
 let moves = 0;
 let score = 0;
-let time = 0;
+let seconds = 0;
+let minutes = 0;
 
-let timer = document.querySelector('#playButton').addEventListener('click', function () {
-    interval = setInterval(function () {
-        timer = document.querySelector('.timer').textContent = `Time: ${time++}`;
+    document.querySelector('#playButton').addEventListener('click', function() {
+    seconds += 1;
+    secondInterval = setInterval(function () {
+    let timer = document.querySelector('.timer').textContent = ` Time: 00:${seconds++}`;
+    if (seconds >= 60){
+        seconds = 0;
+        timer.innerHTML = `Time: ${minutes++}:00`
+        console.log(minutes)
+    }
     }, 1000);
 });
 

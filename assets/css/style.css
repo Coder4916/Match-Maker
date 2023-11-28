@@ -1,4 +1,5 @@
-#header {
+#game-header {
+    position: fixed;
     width: 100%;
     height: auto;
 }
@@ -66,7 +67,7 @@
 #game-section {
     width: 75%;
     margin: auto;
-    background-color: lightblue;
+    background-color: green;
 }
 
 #game-grid {
@@ -122,12 +123,20 @@
     background-color: green;
 }
 
-.modal-body {
-    background-color:;
+.modal-header, h5{
+    justify-content: center;
 }
 
-.modal-footer {
+.modal-body{
+    text-align: center;
+}
+
+.modal-footer{
     background-color: black;
+}
+
+.modal-footer, button{
+    justify-content: center;
 }
 
 #game-footer {
