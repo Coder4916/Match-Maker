@@ -65,9 +65,9 @@
 
 ## **Introduction**
 
-Match-Maker is a card memory game, where the aim of the game is to match pairs of cards in a grid. For each pair found, the player gains a point. The amount of moves are also tracked, to add an extra challenge element to the game. Each game is also timed, giving each player an idea of how long it takes to complete.
+Match-Maker is a card memory game, where the aim of the game is to match pairs of cards in a grid. For each pair found, the player gains a point. The amount of moves made are recorded and each game is timed, adding an extra challenge element to the game.
 
-The main requirement of this project was to build a responsive, front end gaming site, with the primary objective of making Match-Maker easy to play.
+The main requirement of this project is to build a responsive, front end gaming site, with the primary objective of making Match-Maker easy to play.
 
 ## **UX Development**
 
@@ -75,68 +75,57 @@ The main requirement of this project was to build a responsive, front end gaming
 
 UX research was carried out through discussion with:
 
-- Friends and family
+- Friends and family, specifically my 5 year old daughter.
 - Work colleagues
 
 ### **User Stories**
 
 #### **First Time User Goals**
 
-1. As a first-time user, I want to be able to access the game quickly and easily and be able to navigate the website with ease.
+1. As a first-time user, I want to be able to access the game quickly and easily and be able to navigate the rest of the site with ease.
 2. As a first-time user, I want access to instructions on how to play Match-Maker.
-3. As a first-time user, I want to be able to locate the game craator's social media links for information on any other developments
-4. As a first-time user, I want to have the option to contact the owner further if required.
+3. As a first-time user, I want to be able to locate the game creator's social media links for information on any other developments.
+4. As a first-time user, I want to be engaged in the game and it's function.
 
 #### **Returning User Goals**
 
-1. As a returning user, I want to know if there's an FAQs page for any questions I may have.
-2. As a returning user, I want access to different ways of contacting the user further if required.
-3. As a returning user I want to easily access further information as required.
+1. As a returning user, I want to be able to access the game quickly and easily.
+2. As a returning user, I want to be engaged in the game and it's function.
+3. As a returning user, I want access instructions if I need a refresher on how to play the game.
+4. As a returning user, I want to be able to locate the game creator's social media links for information on any other developments or updates.
 
 #### **Frequent User Goal**
 
-1. As a frequent user, I want to know if there will be chance to give feedback on the website.
-2. As a frequent user I want to access information easily.
-3. As a frequent user I want to be able to contact the owner easily.
+1. As a frequent user, I want to be engaged in the game and it's function.
+2. As a frequent user, I want to access game instructions easily.
+3. As a frequent user, I want to be able to contact the owner of the site if required.
 
 ### **Research**
 
-- Interviews with website owner
-
-Numerous discussions with the website owner to understand their wants and needs from the website. Discussed strategy, functionality, theme and 'feeling'. As part of this, obtained photographs and soundbites to aid with the website design. Owner shared existing logo in order to guide the theme across the pages.
-
-- Competitor research
-
-Researched other coaching websites available online. This enabled me to understand what is feasible, what looks good in this sector and how other coaches present themselves. This research led me to suggest the owner drop the initially suggested 'Unconventional Coach' name, as there are many other more 'unconventional' methods in comparison to his offering. The research led me to conclude that in this case, 'unconventional' wasn't appropriate and wouldn't add value.
+A lot of research was carried out online, where I played different games in order to identify something which could be educational and entertaining and understand the capability of a javascript platform. Also being actively aware of my daughter's reaction to these games, for example she became particulary interested in the Math game built during the CI module phase.  I also considered offline research through general play with my daughter; she enjoys games that a easy to understand and quick to win, such as Snap and Memory.
 
 - Sector Research
 
-I researched articles and sites that focused on life coaching, which helped to guide me on the best approaches, taglines and language for the sector.
+I researched sites that focused on memory games, which helped to guide me on the best approaches, themes and layout for my game.
 
 Examples of sites I reviewed to bolster my research:
 
-[Top 10 Life Coaching Websites](https://paperbell.com/blog/life-coaching-websites/)
+[Memozor, free memory games](https://www.memozor.com/memory-games)
 
-[Life Coaching Taglines](https://paperbell.com/blog/the-5-step-process-for-an-unforgettable-life-coaching-tagline/)
-
-[48 Call to action examples](https://blog.hubspot.com/marketing/call-to-action-examples)
-
-[What is Neurodiversity?](https://geniuswithin.org/what-is-neurodiversity/)
-
-[6 best website builders for Life Coaches](https://www.websiteplanet.com/blog/best-website-builders-for-life-coaches/?cq_src=google_ads&cq_cmp=11118429292&cq_term=&cq_plac=&cq_net=g&cq_plt=gp&gclid=Cj0KCQjw_5unBhCMARIsACZyzS2Bhh3MQ7QewK3UK3YkML_UYDLsx-kCgIStd0Xwz-qnJVSeyeP-mhoaAruPEALw_wcB)
+[Help my kid learn](https://www.helpmykidlearn.ie/activities/5-7/detail/memory-card-game)
 
 ### **Project Goals**
 
-The project goal is to provide an informative and promotional life coaching website 'Think-in-Space'. This site will make it easy for customers looking for life coaching to determine whether this is the right route and approach for them, and enable them to start the journey.
+The project goal is to provide an educational and entertaining Memory gaming website 'Match-Maker'. The target audience will primarily be for ages 5+, and will be pitched at the capabilty of that age group.
 
 ### **User Goals**
 
-The target audience for this website is varied, as life coaching is available to all. The key thing is to enable those that are in need to find this coach, and make contact. Location is not important as the services are available remotely as well as face to face.
+The target audience for this website is age 5+. The key thing for this gaming site is that it should be entertaining and educational.
 
 Specifically:
 
-- People who require emotional support or guidance
-- People interested in life coaching, looking to make a change
+- People who are looking to improve their memory
+- People interested in 
 
 The user goal when using this website is to get comprehensive information about 'Think-in-Space' and enable them to make contact with the Coach to begin a coaching programme.
 
