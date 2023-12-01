@@ -39,10 +39,10 @@ function flipCard() { /* A function to monitor the first and second cards clicke
         return; /* Return the flipCard function */
     }
 
-    cardFlipped = false; /* cardFlipped is equal to false */
+    cardFlipped = false; /* cardFlipped is equal to false to allow for second card*/
     secondCard = this; /* Acknowledge second card is flipped */
-    moves++;
-    document.querySelector('.moves').innerHTML = `Moves:${moves}`;
+    moves++; /* Adds a move to the move counter when both cards have been flipped*/
+    document.querySelector('.moves').innerHTML = `Moves:${moves}`; /* Gets the html element with a class of .moves and adds the move to the html element */
 
     checkCardsMatch(); /* A function within the flipCard function, which evaluates whether the two cards flipped are a match */
 };
@@ -54,6 +54,10 @@ function checkCardsMatch() { /* A function to check whether the first and second
     if (isMatch) {
         score++;
         document.querySelector('.score').innerHTML = `Score:${score}`;
+        if (score === 10){
+            clearInterval(interval);
+        alert("Well done, you found all the pairs!");
+        }
     } 
 }
 
@@ -90,3 +94,4 @@ function resetCards() { /* A function to reset the conditions of the cards if th
     });
 })();
 
+           
