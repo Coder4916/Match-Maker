@@ -11,13 +11,17 @@ let minutes = 0;
 
     document.querySelector('#playButton').addEventListener('click', function() {
     seconds += 1;
-    secondInterval = setInterval(function () {
-    let timer = document.querySelector('.timer').textContent = ` Time: 00:${seconds++}`;
-    if (seconds >= 60){
+    interval = setInterval(function () {
+    let timerSeconds = document.querySelector('.timerSecs')
+    timerSeconds.textContent = `${seconds++}`;
+    if (seconds === 60){
         seconds = 0;
-        timer.innerHTML = `Time: ${minutes++}:00`
-        console.log(minutes)
     }
+    if (seconds === (0+1)){
+            let timerMins = document.querySelector('.timerMins')
+            timerMins.textContent = ` Time: ${minutes += 1}`;
+            console.log(minutes);
+        }
     }, 1000);
 });
 
@@ -85,3 +89,4 @@ function resetCards() { /* A function to reset the conditions of the cards if th
         card.style.order = shuffleCards; /* The cards are the assigned random numbers/positions in the game grid and shuffled */
     });
 })();
+
