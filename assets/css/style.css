@@ -1,3 +1,13 @@
+body {
+    background-image: url(../images/backgroundImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #326771;
+    height: auto;
+    width: 100%;
+}
+
 #game-header {
     position: fixed;
     width: 100%;
