@@ -33,7 +33,7 @@
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarToggler">
-                                    <ul class="navbar-nav list-inline text-center">
+                                    <ul class="navbar-nav navbar-light list-inline text-center">
                                         <li class="col-sm-4 list-inline-item nav-item">
                                             <a href="index.html" class="nav-link hvr-shutter-out-horizontal"
                                                 aria-current="page"><i class="fa-solid fa-house"
@@ -58,17 +58,10 @@
             </div>
         </div>
     </header>
-
-    <!-- A readout display which will show the player's moves taken, score/matched cards and time taken -->
-
-    <section id="readout-display" class="row g-0 container-fluid">
-        <div class="col-4 g-0"><i class="fa-regular fa-hourglass"></i><span class="timerMins"> Time: 00</span>:<span class="timerSecs">00</span></div>
-        <div class="col-4 g-0"><i class="fa-solid fa-bullseye"></i><span class="score">  Score: 0</span></div>
-        <div class="col-4 g-0"><i class="fa-solid fa-angles-right"></i><span class="moves">  Moves: 0</span></div>
-    </section>
  
     <!-- The section below contains all card elements required, which javascript will use to create the memory game -->
-<section id="game-section">
+
+    <section id="game-section">
     <div id="game-grid" class="container-fluid">
         <div class="card" data-shape="circle">
             <img class="card-front" src="/assets/images/circle.jpg" alt="A circle">
@@ -152,14 +145,27 @@
         </div>
     </div>
 </section>
+
+<!-- A readout display which will show the player's moves taken, score/matched cards and time taken -->
+
+<section id="readout-display" class="row g-0 container-fluid">
+    <div class="col-4 g-0"><i class="fa-regular fa-hourglass"></i><span class="timerMins"> Time: 00</span>:<span
+            class="timerSecs">00</span></div>
+    <div class="col-4 g-0"><i class="fa-solid fa-bullseye"></i><span class="score"> Score: 0</span></div>
+    <div class="col-4 g-0"><i class="fa-solid fa-angles-right"></i><span class="moves"> Moves: 0</span></div>
+</section>
     
-    <!-- A Modal with start game button, imported from bootstrap -->
+<!-- A reset game button, imported from bootstrap -->
 
     <section id="reset-game-btn">
         <div class="text-center">
             <button data-type="reset-game" type="button" class="btn btn-success">Reset Game</button>
         </div>
     </section>
+
+    <footer id="game-footer"></footer>
+
+    <!-- A Modal with start game button, imported from bootstrap -->
 
 <div class="modal" tabindex="-1" id="modalPageLoad">
     <div class="modal-dialog">

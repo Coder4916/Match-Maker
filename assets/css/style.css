@@ -8,7 +8,7 @@
     margin: auto 0;
     padding: 0;
     width: 100%;
-    background-color: green;
+    background-color: #004F2D;
 }
 
 .navbar ul {
@@ -20,7 +20,7 @@
 }
 
 .hvr-shutter-out-horizontal {
-    background-color: green;
+    background-color: #004F2D;
 }
 
 .hvr-shutter-out-horizontal:before {
@@ -50,24 +50,24 @@
     height: 100vh;
     text-align: center;
     margin: auto;
-    background-color: orange;
+    background-color: #4B8943;
 }
 
 #readout-display {
     margin: auto;
     padding: 15px;
-    color: rgb(231, 223, 223);
     text-align: center;
     font-family: "Roboto", serif, sans-serif, monospace;
-    background-color: lightcoral;
+    background-color: #4B8943;
+    color: rgb(231, 223, 223);
     height: auto;
-    width: 100%;
+    width: 75%;
 }
 
 #game-section {
     width: 75%;
     margin: auto;
-    background-color: green;
+    background-color: #4B8943;
 }
 
 #game-grid {
@@ -119,28 +119,33 @@
     text-align: center;
 }
 
-.modal-header{
-    background-color: green;
-}
-
-.modal-header, h5{
-    justify-content: center;
-}
-
-.modal-body{
-    text-align: center;
-}
-
-.modal-footer{
-    background-color: black;
-}
-
-.modal-footer, button{
-    justify-content: center;
-}
-
 #game-footer {
-    background-color: black;
+    background-color: #091E05;
     height: 60px;
     width: 100%;
+}
+
+.modal-header {
+    background-color: #004F2D;
+}
+
+.modal-header,
+h5 {
+    justify-content: center;
+    color: rgb(231, 223, 223);
+}
+
+.modal-body {
+    text-align: center;
+    background-color: #4B8943;
+    color: rgb(231, 223, 223);
+}
+
+.modal-footer {
+    background-color: #091E05;
+}
+
+.modal-footer,
+button {
+    justify-content: center;
 }
