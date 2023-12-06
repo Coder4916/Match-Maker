@@ -14,36 +14,34 @@
 </head>
 
 <body>
+
     <header id="game-header">
-        <div class="row g-0 container-fluid">
-            <nav class="navbar navbar-expand-sm">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarToggler">
-                        <ul class="navbar-nav navbar-light list-inline text-center">
-                            <li class="col-sm-4 g-0 list-inline-item nav-item">
-                                <a href="index.html" class="nav-link hvr-shutter-out-horizontal active"
-                                    aria-current="page"><i class="fa-solid fa-house" aria-hidden="true"></i><span>
-                                        Home</span></a>
-                            </li>
-                            <li class="col-sm-4 g-0 list-inline-item nav-item">
-                                <a href="playGame.html" class="nav-link hvr-shutter-out-horizontal"><i
-                                        class="fa-solid fa-play" aria-hidden="true"></i><span> Play Game</span></a>
-                            </li>
-                            <li class="col-sm-4 g-0 list-inline-item nav-item">
-                                <a href="howToPlay.html" class="nav-link hvr-shutter-out-horizontal"><i
-                                        class="fa-solid fa-circle-question" aria-hidden="true"></i><span> How to
-                                        play</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+        <nav class="row container-fluid navbar navbar-expand-sm fixed-top">
+            <a href="index.html" class="col-3">
+                <img class="game-logo" src="assets/images/logo.png" alt="Image of a brain, titled Match-Maker">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="col-9 collapse navbar-collapse" id="navbarToggler">
+                <ul class="row g-0 container-fluid navbar-nav navbar-light list-inline text-center">
+                    <li class="col list-inline-item nav-item">
+                        <a href="index.html" class="nav-link hvr-shutter-out-horizontal" aria-current="page"><i
+                                class="fa-solid fa-house" aria-hidden="true"></i><span> Home</span></a>
+                    </li>
+                    <li class="col list-inline-item nav-item">
+                        <a href="playGame.html" class="nav-link hvr-shutter-out-horizontal"><i class="fa-solid fa-play"
+                                aria-hidden="true"></i><span> Play Game</span></a>
+                    </li>
+                    <li class="col list-inline-item nav-item">
+                        <a href="howToPlay.html" class="nav-link hvr-shutter-out-horizontal active"><i
+                                class="fa-solid fa-circle-question" aria-hidden="true"></i><span> How to play</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <section id="welcome-section">

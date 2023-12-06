@@ -14,6 +14,13 @@ body {
     height: auto;
 }
 
+.game-logo {
+    height: 120px;
+    padding: 10px;
+    width: auto;
+    margin: auto 0;
+}
+
 .navbar {
     margin: auto 0;
     padding: 0;
@@ -22,11 +29,8 @@ body {
 }
 
 .navbar ul {
+    margin: 0;
     width: 100%;
-}
-
-.navbar li {
-    font-size: 15px;
 }
 
 .hvr-shutter-out-horizontal {
@@ -38,46 +42,58 @@ body {
 }
 
 .nav-item a {
-    margin: auto 0;
-    padding: 15px;
     width: 100%;
     text-decoration: none;
     text-transform: uppercase;
     font-family: "Roboto", serif, sans-serif, monospace;
+    font-size: 20px;
     color: rgb(231, 223, 223) !important;
 }
 
 .nav-item a i {
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .active {
     background-color: hsl(180, 3%, 45%, 0.4);
+    width: 100%;
 }
 
 #welcome-section {
     width: 75%;
-    height: 100vh;
     text-align: center;
+    height: 100vh;
+    margin: auto;
+    background-color: #4B8943;
+}
+
+#game-section {
+    width: 75%;
+    height: 100vh;
     margin: auto;
     background-color: #4B8943;
 }
 
 #readout-display {
+    float: left;
     margin: auto;
     padding: 15px;
     text-align: center;
     font-family: "Roboto", serif, sans-serif, monospace;
     background-color: #4B8943;
     color: rgb(231, 223, 223);
-    height: auto;
-    width: 75%;
+    width: 20%;
 }
 
-#game-section {
-    width: 75%;
+#readout-display div{
+    padding: 10px;
+}
+
+#reset-game-btn {
     margin: auto;
-    background-color: #4B8943;
+    padding: 10px;
+    width: 75%;
+    text-align: center;
 }
 
 #game-grid {
@@ -123,18 +139,6 @@ body {
     padding: 25px 10px 25px 10px;
 }
 
-#reset-game-btn {
-    margin: auto;
-    width: 75%;
-    text-align: center;
-}
-
-#game-footer {
-    background-color: #091E05;
-    height: 60px;
-    width: 100%;
-}
-
 .modal-header {
     background-color: #004F2D;
 }
@@ -158,4 +162,10 @@ h5 {
 .modal-footer,
 button {
     justify-content: center;
+}
+
+#game-footer {
+    background-color: #091E05;
+    height: 60px;
+    width: 100%;
 }
