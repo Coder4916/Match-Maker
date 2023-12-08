@@ -6,8 +6,8 @@ let lockBoard = false; /* The game grid is locked (Prevents a pair of cards from
 let firstCard, secondCard; /* A variable, which initiates firstCard and secondCard */
 let moves = 0;
 let score = 0;
-let seconds = 00;
-let minutes = 00;
+let seconds = 0;
+let minutes = 0;
 
     document.querySelector('#playButton').addEventListener('click', function() {
     seconds += 1;
@@ -15,14 +15,17 @@ let minutes = 00;
     let timerSeconds = document.querySelector('.timerSecs')
     timerSeconds.textContent = `${seconds++}`;
     if (seconds === 60){
-        seconds = 00;
+        seconds = 0;
     }
     if (seconds === (0+1)){
             let timerMins = document.querySelector('.timerMins')
             timerMins.textContent = ` Time: ${minutes += 1}`;
-            console.log(minutes);
         }
     }, 1000);
+});
+
+let resetButton = document.querySelector('#reset-game-btn').addEventListener('click', function(){
+    
 });
 
 function flipCard() { /* A function to monitor the first and second cards clicked on, with the 'this' event used to monitor the clicks. */
@@ -94,11 +97,5 @@ function resetCards() { /* A function to reset the conditions of the cards if th
     });
 })();
 
-function resetGame(){
-    let resetButton = document.querySelector('reset-game-btn')
-    resetButton.addEventListener('click', function(){
-    resetButton.alert("reset")
-    })
-}
 
            

@@ -16,7 +16,6 @@
     - [**Research**](#research)
     - [**Project Goals**](#project-goals)
     - [**User Goals**](#user-goals)
-    - [**Business Goals**](#business-goals)
     - [**Other Considerations**](#other-considerations)
     - [**Strategy Table**](#strategy-table)
     - [2. **Scope Plane**](#2-scope-plane)
@@ -116,41 +115,28 @@ Examples of sites I reviewed to bolster my research:
 
 ### **Project Goals**
 
-The project goal is to provide an educational and entertaining Memory gaming website 'Match-Maker'. The target audience will primarily be for ages 5+, and will be pitched at the capabilty of that age group.
+The project goal is to provide an educational and entertaining gaming website 'Match-Maker'. The target audience will primarily be for ages 5+, and will be pitched at the capabilty of that age group.
 
 ### **User Goals**
 
 The target audience for this website is age 5+. The key thing for this gaming site is that it should be entertaining and educational.
 
-Specifically:
+Specifically targeted towards:
 
+- Anybody interested in memory games
+- Those looking for an entertaining and educational gaming experience
 - People who are looking to improve their memory
-- People interested in 
-
-The user goal when using this website is to get comprehensive information about 'Think-in-Space' and enable them to make contact with the Coach to begin a coaching programme.
-
-### **Business Goals**
-
-- The life coaching sector is busy and has wide-ranging offerings. As such, the website must make it clear the style of coaching offered, and help the user to make the right decision for them.
-
-The business goals of this site are:
-
-- Create an online presence for the coach
-- Introduce the coach to the customer base
-- Acquire new customers to the business
-- Provide information for people looking to begin life coaching
-- To introduce life coaching as a concept to people who may not have otherwise considered it
-- Use FAQs, reviews and testimonials to drive further engagement from returning users
-
-[Back to top](#think-in-space)
+- The game's theme targets younger users, giving the chance to learn more about different shapes
 
 ### **Other Considerations**
 
-Think-in-Space has a Business-To-Customer (B2C) product, in an emerging but busy market, which has considerations as below:
+Match-Maker has further considerations as below:
 
-- Calming and friendly presence
+- Calming and family friendly presence
 - Minimal, to the point content
-- The design stands out amongst competitors
+- Simple to operate
+
+[Back to top](# Match-Maker)
 
 ### **Strategy Table**
 
@@ -170,8 +156,6 @@ Based on the research, goals, and the considerations above, I considered what sh
 | J. Mental Health Referal |     2      |         2 |
 | K. Feedback Form         |     2      |         3 |
 
-[Back to top](#think-in-space)
-
 ### 2. **Scope Plane**
 
 Based on the mapping in Strategy Plane, I decided to include these contents below in the website:
@@ -190,13 +174,11 @@ Based on the mapping in Strategy Plane, I decided to include these contents belo
 
 The website must have a simple structure with a user friendly navigation element to reach each page of information. Each site page will be broken down into sections, and organised so that the information tells a story, and leads the user to a contact page if they want to explore the subject further. The pages will have a consistent predictable template to help with usability and accessibility.
 
-[Back to top](#think-in-space)
-
 ### 4. **Skeleton Plane**
 
 The initial layout and interface of the Website was created using Balsamiq Wireframes. The design/layout and feel of the site was created with UI in mind, which allows immediate interaction in first-time learning, and meets the needs of the intended audience.
 
-![Balsamiq-wireframes](/assets/images/Balsamiq-Wireframes.png)
+![Balsamiq-wireframes](/assets/images/balsamiq-ms2.png)
 
 ### 5. **Surface Plane**
 
@@ -212,7 +194,7 @@ The fonts I used for the website were sourced from [Google Fonts](https://fonts.
 
 I have utilised a mix of free to use images sourced online, and the Coach's personal pictures of local green space/blue space etc. I have used a fallback color if the main body image doesn't load.
 
-[Back to top](#think-in-space)
+[Back to top](# Match-Maker)
 
 ## **Features**
 
