@@ -1,5 +1,5 @@
 let cards = document.querySelectorAll('.card'); /* All html elements within the DOM with the class of card are contained within the cards variable*/
-cards.forEach(card => card.addEventListener('click', flipCard)); /* A click event listener is added to each card, so that the functions can be applied to them */
+cards.forEach(card => card.addEventListener('click', flipCard)); /* A click event listener is added to each card, and the flipCard function is also applied to them */
 
 let cardFlipped = false; /* cardFlipped is initially set to false*/
 let lockBoard = false; /* The game grid is locked (Prevents a pair of cards from being flipped while the first pair is checked for a match)*/
@@ -25,7 +25,7 @@ let minutes = 0;
 });
 
 let resetButton = document.querySelector('#reset-game-btn').addEventListener('click', function(){
-    
+    reset();
 });
 
 function flipCard() { /* A function to monitor the first and second cards clicked on, with the 'this' event used to monitor the clicks. */
@@ -39,13 +39,13 @@ function flipCard() { /* A function to monitor the first and second cards clicke
         cardFlipped = true; /* Make cardFlipped true */
         firstCard = this; /* Acknowledge this is the first card flipped */
 
-        return; /* Return the flipCard function */
+        return; /* Return the flipCard function once the click event happens*/
     }
 
     cardFlipped = false; /* cardFlipped is equal to false to allow for second card*/
     secondCard = this; /* Acknowledge second card is flipped */
     moves++; /* Adds a move to the move counter when both cards have been flipped*/
-    document.querySelector('.moves').innerHTML = `Moves:${moves}`; /* Gets the html element with a class of .moves and adds the move to the html element */
+    document.querySelector('.moves').innerHTML = ` Moves: ${moves}`; /* Gets the html element with a class of .moves and adds the move to the html element */
 
     checkCardsMatch(); /* A function within the flipCard function, which evaluates whether the two cards flipped are a match */
 };
@@ -56,7 +56,7 @@ function checkCardsMatch() { /* A function to check whether the first and second
     isMatch ? collectCards() : returnCards(); /* Ternary Operator to decide whether to collect the cards, or return them to original positions (unflipped). */
     if (isMatch) {
         score++;
-        document.querySelector('.score').innerHTML = `Score:${score}`;
+        document.querySelector('.score').innerHTML = ` Score: ${score}`;
         if (score === 10){
             clearInterval(interval);
         alert("Well done, you found all the pairs!");
@@ -97,5 +97,19 @@ function resetCards() { /* A function to reset the conditions of the cards if th
     });
 })();
 
+function reset(){
+    $("#modalPageLoad").modal('show');
+    clearInterval(interval);
+    seconds = 0;
+    document.querySelector('.timerSecs').textContent = `${seconds}`;
+    minutes = 0;
+    document.querySelector('.timerSecs').textContent = `${minutes}`;
+    moves = 0;
+    document.querySelector('.moves').textContent = ` Moves: ${moves}`;
+    score = 0;
+    document.querySelector('.score').textContent = ` Score: ${score}`;
+}
 
+
+    
            
