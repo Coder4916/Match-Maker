@@ -16,16 +16,14 @@
 <body>
     
     <header id="game-header">
-        <nav class="row container-fluid navbar navbar-expand-sm fixed-top">
-            <a href="index.html" class="col-3">
-                <img class="game-logo" src="assets/images/logo.png" alt="Image of a brain, titled Match-Maker">
-            </a>
+        <nav class="container-fluid navbar navbar-expand-sm fixed-top">
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
     
-            <div class="col-9 collapse navbar-collapse" id="navbarToggler">
+            <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="row g-0 container-fluid navbar-nav navbar-light list-inline text-center">
                     <li class="col list-inline-item nav-item">
                         <a href="index.html" class="nav-link hvr-shutter-out-horizontal" aria-current="page"><i
@@ -51,6 +49,9 @@
     <!-- A readout display which will show the player's moves taken, score/matched cards and time taken -->
 
         <div id="readout-display" class="col-md-3">
+            <a href="index.html" class="col-3">
+                <img class="game-logo" src="assets/images/matchMakerLogo.png" alt="Image of a brain, titled Match-Maker">
+            </a>
             <div><i class="fa-regular fa-hourglass"></i><span class="timerMins"> Time: 00</span>:<span class="timerSecs">00</span>
             </div>
             <div><i class="fa-solid fa-bullseye"></i><span class="score"> Score: 0</span></div>
@@ -64,7 +65,7 @@
 
         </div>  
 
-    <div id="game-grid" class="col-md-9 container-fluid">
+    <div id="game-grid" class="col-md-9">
         <div class="card" data-shape="circle">
             <img class="card-front" src="/assets/images/circle.jpg" alt="A circle">
             <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
@@ -148,7 +149,11 @@
     </div>
 </section>
 
-    <footer id="game-footer" class="fixed-bottom"></footer>
+    <footer id="game-footer" class="fixed-bottom">
+        <p>
+            <span><i class="fa-regular fa-copyright"></i>Match-Maker 2023</span>
+        </p>
+    </footer>
 
     <!-- A Modal with start game button, imported from bootstrap -->
 

@@ -15,7 +15,7 @@ body {
 }
 
 .game-logo {
-    height: 120px;
+    height: 170px;
     padding: 10px;
     width: auto;
     margin: auto 0;
@@ -100,6 +100,7 @@ body {
     display: flex;
     margin: auto;
     flex-wrap: wrap;
+    padding: 5px;
     width: 500px;
     height: 500px;
     perspective: 1000px;
@@ -166,6 +167,12 @@ button {
 
 #game-footer {
     background-color: #091E05;
+    text-align: center;
+    color: rgb(231, 223, 223);
     height: 60px;
     width: 100%;
+}
+
+#game-footer p{
+    padding: 15px;
 }

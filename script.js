@@ -55,10 +55,10 @@ function checkCardsMatch() { /* A function to check whether the first and second
     let isMatch = firstCard.dataset.shape === secondCard.dataset.shape; /* isMatch variable which evaluates whether the dataset (image) in index.html, on the first card clicked by the user, matches the second card clicked */
     isMatch ? collectCards() : returnCards(); /* Ternary Operator to decide whether to collect the cards, or return them to original positions (unflipped). */
     if (isMatch) {
-        score++;
+        score += 2;
         document.querySelector('.score').innerHTML = ` Score: ${score}`;
     }
-        if (score === 10) {
+        if (score === 20) {
             clearInterval(interval);
         alert("Well done, you found all the pairs!");
         }
