@@ -57,12 +57,12 @@ function checkCardsMatch() { /* A function to check whether the first and second
     if (isMatch) {
         score++;
         document.querySelector('.score').innerHTML = ` Score: ${score}`;
-        if (score === 10){
+    }
+        if (score === 10) {
             clearInterval(interval);
         alert("Well done, you found all the pairs!");
         }
-    } 
-}
+    }
 
 function collectCards() { /* A function to collect/keep the cards flipped, once they have been matched correctly by the player */
     firstCard.removeEventListener('click', flipCard);
@@ -98,16 +98,7 @@ function resetCards() { /* A function to reset the conditions of the cards if th
 })();
 
 function reset(){
-    $("#modalPageLoad").modal('show');
-    clearInterval(interval);
-    seconds = 0;
-    document.querySelector('.timerSecs').textContent = `${seconds}`;
-    minutes = 0;
-    document.querySelector('.timerSecs').textContent = `${minutes}`;
-    moves = 0;
-    document.querySelector('.moves').textContent = ` Moves: ${moves}`;
-    score = 0;
-    document.querySelector('.score').textContent = ` Score: ${score}`;
+    window.location.reload()
 }
 
 
