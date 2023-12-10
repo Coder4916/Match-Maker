@@ -35,10 +35,12 @@ body {
 
 .hvr-shutter-out-horizontal {
     background-color: #004F2D;
+    width: 100%;
 }
 
 .hvr-shutter-out-horizontal:before {
     background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
 }
 
 .nav-item a {
@@ -51,7 +53,7 @@ body {
 }
 
 .nav-item a i {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .active {
@@ -64,14 +66,42 @@ body {
     text-align: center;
     height: 100vh;
     margin: auto;
-    background-color: #4B8943;
+    background-color: hsl(113, 34%, 40%, 0.9);
+}
+
+#welcome-section, h1{
+    color: rgb(231, 223, 223);
+    font-size: 50px;
+    padding: 10%;
+    border: 2px solid black;
+}
+
+#welcome-section, a{
+    text-decoration: none;
+    color: rgb(231, 223, 223);
 }
 
 #game-section {
     width: 75%;
     height: 100vh;
     margin: auto;
-    background-color: #4B8943;
+    background-color: hsl(113, 34%, 40%, 0.9);
+}
+
+#how-to-section {
+    width: 75%;
+    padding: 10%;
+    height: 100vh;
+    margin: auto;
+    background-color: hsl(113, 34%, 40%, 0.9);
+}
+
+#how-to-section p {
+    color: rgb(231, 223, 223);
+    font-size: 30px;
+    padding: 5%;
+    border: 2px solid black;
+    text-align: center;
 }
 
 #readout-display {
@@ -85,7 +115,7 @@ body {
     width: 20%;
 }
 
-#readout-display div{
+#readout-display div {
     padding: 10px;
 }
 
@@ -173,6 +203,6 @@ button {
     width: 100%;
 }
 
-#game-footer p{
+#game-footer p {
     padding: 15px;
 }
