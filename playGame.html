@@ -44,26 +44,26 @@
  
     <!-- The section below contains all card elements required, which javascript will use to create the memory game -->
 
-    <section id="game-section" class="row g-0 container fluid">
-
-    <!-- A readout display which will show the player's moves taken, score/matched cards and time taken -->
+    <section id="game-section" class="row g-0 container fluid"> 
 
         <div id="readout-display" class="col-md-3">
             <a href="index.html" class="col-3">
-                <img class="game-logo" src="assets/images/matchMakerLogo.png" alt="Game logo, a brain with the caption Match-Maker">
+                <img class="game-logo" src="assets/images/matchMakerLogo.png"
+                    alt="Game logo, a brain with the caption Match-Maker">
             </a>
-            <div><i class="fa-regular fa-hourglass"></i><span class="timerMins"> Time: 00</span>:<span class="timerSecs">00</span>
+            <div><i class="fa-regular fa-hourglass"></i><span class="timerMins"> Time: 00</span>:<span
+                    class="timerSecs">00</span>
             </div>
             <div><i class="fa-solid fa-bullseye"></i><span class="score"> Score: 0</span></div>
             <div><i class="fa-solid fa-angles-right"></i><span class="moves"> Moves: 0</span></div>
-
-    <!-- A reset game button, imported from bootstrap -->
-
+        
+            <!-- A reset game button, imported from bootstrap -->
+        
             <div class="text-center">
                 <button id="reset-game-btn" data-type="reset-game" type="button" class="btn btn-success">Reset Game</button>
             </div>
-
-        </div>  
+        
+        </div>
 
     <div id="game-grid" class="col-md-9">
         <div class="card" data-shape="circle">
@@ -147,6 +147,9 @@
             <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
         </div>
     </div>
+
+    <!-- A readout display which will show the player's moves taken, score/matched cards and time taken -->
+
 </section>
 
     <footer id="game-footer" class="fixed-bottom">
