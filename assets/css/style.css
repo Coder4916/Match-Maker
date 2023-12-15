@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/backgroundImage.jpg);
+    background-image: url(../images/green-background.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -12,6 +12,7 @@ body {
 
 #game-header {
     position: fixed;
+    z-index: 2;
     width: 100%;
     height: auto;
     font-family: "Roboto", serif, sans-serif, monospace;
@@ -86,19 +87,26 @@ body {
 
 .welcome-link a{
     text-decoration: none;
+    color: rgb(231, 223, 223);
 }
 
 #game-section {
     width: 75%;
-    height: 100vh;
+    min-height: 100vh;
+    z-index: 1;
     margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: hsl(113, 34%, 40%, 0.9);
+}
+
+#game-grid {
+    padding: 60px;
 }
 
 #how-to-section {
     width: 75%;
     text-align: center;
-    height: 100vh;
     margin: auto;
     padding: 20px;
     background-color: hsl(113, 34%, 40%, 0.9);
@@ -224,14 +232,17 @@ button {
     .game-logo {
         display: none;
     }
-    #readout-display {
-
-    }
+    
     #readout-display > div {
         display: inline;
     }
+
     #game-grid {
         width: 350px;
         height: 350px;
     }
+}
+
+@media only screen and (max-width: 992px) {
+   
 }
