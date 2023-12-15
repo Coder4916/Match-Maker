@@ -176,7 +176,7 @@ The website must have a simple structure with a user friendly navigation element
 
 ### 4. **Skeleton Plane**
 
-The initial layout and interface of the Website was created using Balsamiq Wireframes. The design/layout and feel of the site was created with UI in mind, which allows immediate interaction in first-time learning, and meets the needs of the intended audience.
+The initial layout and interface of the Website has been created using Balsamiq Wireframes. The design/layout and feel of the site was created with UI in mind, which allows immediate interaction in first-time learning, and meets the needs of the intended audience.
 
 ![Balsamiq-wireframes](/assets/images/balsamiq-ms2.png)
 
@@ -184,7 +184,7 @@ The initial layout and interface of the Website was created using Balsamiq Wiref
 
 #### **Color Scheme**
 
-The colors used are primarily derived from the logo provided by the website owner. To create a cohesive color scheme from beginning to end, [Color Wheel](https://www.canva.com/colors/color-wheel/), [Color Picker](https://www.google.com/search?q=color+picker&oq=color&aqs=chrome.3.0i67i433i650j69i57j69i59l2j0i67i650l3j69i61.2852j0j7&sourceid=chrome&ie=UTF-8&bshm=rime/1) and [Coolers](https://coolors.co/) were used to identify complementary colours and wider colour palettes that would work on the website.
+The colors  for this site are were sourced from [Coolers](https://coolors.co/). To create a cohesive color scheme from beginning to end, the coolers pallette tool was used to provide color cohesion.
 
 #### **Typography**
 
