@@ -44,10 +44,10 @@
  
     <!-- The section below contains all card elements required, which javascript will use to create the memory game -->
 
-    <section id="game-section" class="row g-0 container fluid"> 
-
+<section id="game-section"> 
+    <div id="game-container" class="row g-0 container fluid">
         <div id="readout-display" class="col-md-3">
-            <a href="index.html" class="col-3">
+            <a href="index.html">
                 <img class="game-logo" src="assets/images/ms2-logo.avif"
                     alt="Game logo, a brain with the caption Match-Maker">
             </a>
@@ -65,86 +65,87 @@
         
         </div>
 
-    <div id="game-grid" class="col-md-9">
-        <div class="card" data-shape="circle">
-            <img class="card-front" src="/assets/images/circle.jpg" alt="A circle">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="circle">
-            <img class="card-front" src="/assets/images/circle.jpg" alt="A circle">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="heptagon">
-            <img class="card-front" src="/assets/images/heptagon.jpg" alt="A heptagon">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="heptagon">
-            <img class="card-front" src="/assets/images/heptagon.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="hexagon">
-            <img class="card-front" src="/assets/images/hexagon.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="hexagon">
-            <img class="card-front" src="/assets/images/hexagon.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="hexagramStar">
-            <img class="card-front" src="/assets/images/hexagram-star.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="hexagramStar">
-            <img class="card-front" src="/assets/images/hexagram-star.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="octagon">
-            <img class="card-front" src="/assets/images/octagon.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="octagon">
-            <img class="card-front" src="/assets/images/octagon.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="pentagon">
-            <img class="card-front" src="/assets/images/pentagon.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="pentagon">
-            <img class="card-front" src="/assets/images/pentagon.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="pentagramStar">
-            <img class="card-front" src="/assets/images/pentagram-star.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="pentagramStar">
-            <img class="card-front" src="/assets/images/pentagram-star.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="nonagon">
-            <img class="card-front" src="/assets/images/nonagon.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="nonagon">
-            <img class="card-front" src="/assets/images/nonagon.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="square">
-            <img class="card-front" src="/assets/images/square.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="square">
-            <img class="card-front" src="/assets/images/square.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="triangle">
-            <img class="card-front" src="/assets/images/triangle.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
-        </div>
-        <div class="card" data-shape="triangle">
-            <img class="card-front" src="/assets/images/triangle.jpg" alt="">
-            <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+        <div id="game-grid" class="col-md-9">
+            <div class="card" data-shape="circle">
+                <img class="card-front" src="/assets/images/circle.jpg" alt="A circle">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="circle">
+                <img class="card-front" src="/assets/images/circle.jpg" alt="A circle">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="heptagon">
+                <img class="card-front" src="/assets/images/heptagon.jpg" alt="A heptagon">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="heptagon">
+                <img class="card-front" src="/assets/images/heptagon.jpg" alt="A heptagon">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="hexagon">
+                <img class="card-front" src="/assets/images/hexagon.jpg" alt="A hexagon">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="hexagon">
+                <img class="card-front" src="/assets/images/hexagon.jpg" alt="A hexagon">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="hexagramStar">
+                <img class="card-front" src="/assets/images/hexagram-star.jpg" alt="A hexagram star">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="hexagramStar">
+                <img class="card-front" src="/assets/images/hexagram-star.jpg" alt="A hexagram star">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="octagon">
+                <img class="card-front" src="/assets/images/octagon.jpg" alt="An Octogon">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="octagon">
+                <img class="card-front" src="/assets/images/octagon.jpg" alt="An Octogon">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="pentagon">
+                <img class="card-front" src="/assets/images/pentagon.jpg" alt="A pentagon">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="pentagon">
+                <img class="card-front" src="/assets/images/pentagon.jpg" alt="A pentagon">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="pentagramStar">
+                <img class="card-front" src="/assets/images/pentagram-star.jpg" alt="A pentagram star">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="pentagramStar">
+                <img class="card-front" src="/assets/images/pentagram-star.jpg" alt="A pentagram star">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="nonagon">
+                <img class="card-front" src="/assets/images/nonagon.jpg" alt="A nonogon">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="nonagon">
+                <img class="card-front" src="/assets/images/nonagon.jpg" alt="A nonogon">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="square">
+                <img class="card-front" src="/assets/images/square.jpg" alt="A square">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="square">
+                <img class="card-front" src="/assets/images/square.jpg" alt="A square">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="triangle">
+                <img class="card-front" src="/assets/images/triangle.jpg" alt="A triangle">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
+            <div class="card" data-shape="triangle">
+                <img class="card-front" src="/assets/images/triangle.jpg" alt="A triangle">
+                <img class="card-rear" src="/assets/images/pattern.jpg" alt="A multi colored pattern">
+            </div>
         </div>
     </div>
 

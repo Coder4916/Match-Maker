@@ -90,7 +90,7 @@ body {
     color: rgb(231, 223, 223);
 }
 
-#game-section {
+#game-container {
     width: 75%;
     min-height: 100vh;
     z-index: 1;
@@ -98,10 +98,6 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: hsl(113, 34%, 40%, 0.9);
-}
-
-#game-grid {
-    padding: 60px;
 }
 
 #how-to-section {
@@ -145,8 +141,8 @@ body {
     display: flex;
     margin: auto;
     flex-wrap: wrap;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     perspective: 1000px;
 }
 
@@ -235,11 +231,12 @@ button {
     
     #readout-display > div {
         display: inline;
+        width: 75%;
     }
 
     #game-grid {
-        width: 350px;
-        height: 350px;
+        width: 400px;
+        height: 400px;
     }
 }
 
