@@ -184,7 +184,7 @@ The initial layout and interface of the Website has been created using Balsamiq 
 
 #### **Color Scheme**
 
-The colors  for this site are were sourced from [Coolers](https://coolors.co/). To create a cohesive color scheme from beginning to end, the coolers pallette tool was used to provide color cohesion.
+The color pallette for this site was sourced from [Coolers](https://coolors.co/). To create a cohesive color scheme.
 
 #### **Typography**
 
@@ -193,6 +193,8 @@ The fonts I used for the website were sourced from [Google Fonts](https://fonts.
 #### **Imagery**
 
 I have utilised a mix of free to use images sourced online, and the Coach's personal pictures of local green space/blue space etc. I have used a fallback color if the main body image doesn't load.
+
+[Freepik]("https://www.freepik.com/free-vector/linear-flat-abstract-lines-pattern_13859357.htm#page=3&query=patterns&position=3&from_view=search&track=sph&uuid=7cfd9537-b698-4e35-9bf4-2e4eca7e24a0">Freepik)
 
 [Back to top](# Match-Maker)
 

@@ -95,13 +95,14 @@ body {
     min-height: 100vh;
     z-index: 1;
     margin: auto;
-    padding-top: 60px;
     padding-bottom: 60px;
+    padding-top: 60px;
     background-color: hsl(113, 34%, 40%, 0.9);
 }
 
 #how-to-section {
     width: 75%;
+    height: 100vh;
     text-align: center;
     margin: auto;
     padding: 20px;
@@ -121,13 +122,14 @@ body {
 #readout-display {
     float: left;
     margin: auto;
+    padding-top: 40px;
     text-align: center;
     background-color: #4B8943;
-    width: auto;
+    width: 30%;
 }
 
-#readout-display div {
-    padding: 10px;
+#readout-display > div {
+    padding: 20px;
 }
 
 #reset-game-btn {
@@ -217,7 +219,7 @@ button {
 @media only screen and (max-width: 600px) {
 
     #welcome-section,
-    #game-section,
+    #game-container,
     #how-to-section
      {
         width: 100%;
@@ -228,11 +230,6 @@ button {
     .game-logo {
         display: none;
     }
-    
-    #readout-display > div {
-        display: inline;
-        width: 75%;
-    }
 
     #game-grid {
         width: 400px;
@@ -241,5 +238,8 @@ button {
 }
 
 @media only screen and (max-width: 992px) {
-   
+#readout-display {
+        width: 75%;
+    }
 }
+
