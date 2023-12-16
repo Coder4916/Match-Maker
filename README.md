@@ -28,15 +28,12 @@
   - [**Features**](#features)
     - [**Current Features**](#current-features)
       - [1. **Header**](#1-header)
-      - [2. **About me page**](#2-about-me-page)
-      - [3. **Coaching Page**](#3-coaching-page)
-      - [4. **Contact Page**](#4-contact-page)
-      - [5. **Footer**](#5-footer)
-      - [6. **Learn more Page**](#6-learn-more-page)
+      - [2. **Introduction page**](#2-introduction-page)
+      - [3. **How to play page**](#3-how-to-play-page)
+      - [4. **Footer**](#4-footer)
     - [**Features to be added in the future**](#features-to-be-added-in-the-future)
   - [**Technologies Used**](#technologies-used)
     - [**Main Languages used**](#main-languages-used)
-    - [**Additional Languages Used**](#additional-languages-used)
     - [**Frameworks, Libraries and Programs Used**](#frameworks-libraries-and-programs-used)
   - [**Issues and Bugs**](#issues-and-bugs)
   - [**Deployment**](#deployment)
@@ -101,7 +98,7 @@ UX research was carried out through discussion with:
 
 ### **Research**
 
-A lot of research was carried out online, where I played different games in order to identify something which could be educational and entertaining and understand the capability of a javascript platform. Also being actively aware of my daughter's reaction to these games, for example she became particulary interested in the Math game built during the CI module phase.  I also considered offline research through general play with my daughter; she enjoys games that a easy to understand and quick to win, such as Snap and Memory.
+A lot of research was carried out online, where I played different games in order to identify something which could be educational and entertaining and understand the capability of a javascript platform. Also being actively aware of my daughter's reaction to these games, for example she became particulary interested in the Math game built during the CI module phase.  I also considered offline research through general play with my daughter; she enjoys games that are easy to understand and quick to win, such as Snap and Memory.
 
 - Sector Research
 
@@ -136,43 +133,38 @@ Match-Maker has further considerations as below:
 - Minimal, to the point content
 - Simple to operate
 
-[Back to top](# Match-Maker)
+[Back to top](#match-maker)
 
 ### **Strategy Table**
 
-Based on the research, goals, and the considerations above, I considered what should be implemented on the website. I mapped the ideas based on their importance (driven by business goals and user needs), and viability (given limited time and resources), to determine which ideas were going to be included and which were not:
+Based on the research, goals, and the considerations above, I considered what should be implemented on the website. I mapped the ideas based on their importance, user needs, and viability (given limited time and resources), to determine which ideas were going to be included and which were not:
 
-| Features/Ideas           | Importance | Viability |
-| ------------------------ | :--------: | --------: |
-| A. Coach bio             |     5      |         5 |
-| B. Code of Ethics        |     5      |         5 |
-| C. Contact Details       |     5      |         5 |
-| D. Testimonials          |     4      |         5 |
-| E. FAQs                  |     4      |         5 |
-| F. Coaching overview     |     4      |         5 |
-| G. Links                 |     4      |         4 |
-| H. Social Media profiles |     3      |         4 |
-| I. Guarantees            |     2      |         1 |
-| J. Mental Health Referal |     2      |         2 |
-| K. Feedback Form         |     2      |         3 |
+| Features/Ideas           | Importance |  Viability |
+| ------------------------ | :--------: | :--------: |
+| A. Game instructions     |     5      |      5     |
+| B. Choice of difficulty  |     3      |      3     |
+| C. Player vs player      |     3      |      3     |
+| D. Game reviews          |     3      |      2     |
+| E. Game timer            |     4      |      5     |
+| F. Game move counter     |     4      |      5     |
+| G. Game score counter    |     4      |      5     |
+| H. Social Media links    |     1      |      4     |
+| I. Different themes      |     3      |      3     |
+| J. Gaming links          |     3      |      3     |
+| K. Feedback Form         |     3      |      4     |
 
 ### 2. **Scope Plane**
 
 Based on the mapping in Strategy Plane, I decided to include these contents below in the website:
 
-- Coach Bio and background; introduces the user to the coach.
-- How Coaching works; will inform the user of what Life Coaching is, and whether it is the right choice for them.
-- Contact form; which will include a request for a coaching session or further information depending on what the user needs.
-- Frequently Asked Questions; which will further aid the user's decision based on the choice to try out Life Coaching.
-- Location and approach; a map will be included, as well as suggestions based on where coaching could take place.
-- Functionality requirements:
-  the user should be able to navigate easily through the website to access all the contents via a navigation menu.
-- The user should have access to the owner's contact details as required
-- The user will be able to access a series of testimonials via a user friendly carousel
+- Introduction page with logo; Introduces the user to the game site.
+- How to play/gaming Instructions; A guide on how to play Match-Maker.
+- Game score/move counters; Records a users game progress, and adds a further challenge element to the game.
+- Game timer; Again, adds a further challenge element to the game.
 
 ### 3. **Structure Plane**
 
-The website must have a simple structure with a user friendly navigation element to reach each page of information. Each site page will be broken down into sections, and organised so that the information tells a story, and leads the user to a contact page if they want to explore the subject further. The pages will have a consistent predictable template to help with usability and accessibility.
+The game must have a simple structure with a user friendly navigation element which appeals to all ages, to reach each page of information. Each page will have a consistent predictable template to help with usability and accessibility.
 
 ### 4. **Skeleton Plane**
 
@@ -184,19 +176,17 @@ The initial layout and interface of the Website has been created using Balsamiq 
 
 #### **Color Scheme**
 
-The color pallette for this site was sourced from [Coolers](https://coolors.co/). To create a cohesive color scheme.
+The color pallette for this site was sourced from [Coolers](https://coolors.co/) to create a cohesive color scheme. Based on the choice of color, I was influenced by other card/tile games such as Solitaire and Mahjong.
 
 #### **Typography**
 
-The fonts I used for the website were sourced from [Google Fonts](https://fonts.google.com/). Inc [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto) and [Lexend Font](https://fonts.google.com/specimen/Lexend?query=lexend). Lexend used for titles and Roboto for paragraphs/general text. Both fonts are recommended for use for people with dysleia [(Tink 'n' Stink)](https://www.tinknstink.co.uk/blogs/news/why-we-use-the-dyslexia-friendly-font-lexend). After researching [commonly used fallback fonts](https://www.w3schools.com/css/css_font_fallbacks.asp), I decided to use serif, sans serif and monospace as Think-In -Space's fallbacks.
+The fonts I used for the website were sourced from [Google Fonts](https://fonts.google.com/). [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto) is used for the navbar and paragraphs/general text. This font is recommended for use for people with dysleia [(Tink 'n' Stink)](https://www.tinknstink.co.uk/blogs/news/why-we-use-the-dyslexia-friendly-font-lexend). After researching [commonly used fallback fonts](https://www.w3schools.com/css/css_font_fallbacks.asp), I decided to use serif, sans serif and monospace as Match-Maker's fallbacks.
 
 #### **Imagery**
 
-I have utilised a mix of free to use images sourced online, and the Coach's personal pictures of local green space/blue space etc. I have used a fallback color if the main body image doesn't load.
+I have utilised free to use images sourced online. A fallback color is included if the main body image doesn't load. [The background image](https://www.pexels.com/photo/close-up-photo-of-green-background-3117225/) was sourced from [Pexels](https://www.pexels.com/) and was created by [Eriks Abzinovs](https://www.pexels.com/@pixworthmedia/). The card pattern was sourced from[Freepik](https://www.freepik.com/free-vector/watercolor-geometric-background_23849498.htm), and the game's logo was created using [Canva](https://www.canva.com/).
 
-[Freepik]("https://www.freepik.com/free-vector/linear-flat-abstract-lines-pattern_13859357.htm#page=3&query=patterns&position=3&from_view=search&track=sph&uuid=7cfd9537-b698-4e35-9bf4-2e4eca7e24a0">Freepik)
-
-[Back to top](# Match-Maker)
+[Back to top](#match-maker)
 
 ## **Features**
 
@@ -204,54 +194,33 @@ I have utilised a mix of free to use images sourced online, and the Coach's pers
 
 #### 1. **Header**
 
-- The header consists of a website logo which sits on the left hand side of the page, navigation bar and title. The nav-bar includes three nav-links on the right hand side that link to each site page. The header occupies 100% width of the site.
+- The header consists of a [Bootstrap](https://getbootstrap.com/) navigation bar. The nav-bar includes three nav-links and occupies 100% width of the site.
 
 - The navigation bar is fully responsive on all device sizes. On desktop view, the user can see all nav-links, while on a smaller device, these collapse to a [Bootstrap Hamburger](https://getbootstrap.com/docs/5.3/components/navbar/#toggler) menu.
 
-- The main logo is not displayed on a small device to create more space for content and features. This is done using a CSS Media Query.
+- The Game's logo is not displayed on a small device to create more space for content and features. This is done using a CSS Media Query.
 
 - The Nav-links have a subtle hover state when the user hovers over each link, and includes a [Bootstrap](https://getbootstrap.com/docs/5.3/components/list-group/#active-items) .active class to show which page the user is on.
 
-#### 2. **About me page**
+#### 2. **Introduction page**
 
-- The About me page includes three sections which give a brief introduction of the Coach;
+- The Introduction page displays Match-Maker's logo and a 'Play Now' link to the game;
 
-- The Coach, Background and Tried and Tested sections include information about the Coach's life experience and qualifications, as well as how the Coach has already helped others.
+#### 3. **How to play page**
 
-#### 3. **Coaching Page**
+- The How to play Page includes a game guide to assist new players.
 
-- The Coaching Page includes three sections which inform the user about Life Coaching;
+#### 4. **Footer**
 
-- The Why Life Coaching, What to Expect, and Testimonials sections include information and reviews based on what would normally be involved if a user decides to book a coaching session, and help them decide whether this coaching/journey is right for them.
-
-- A Bootstrap Carousel has been added to display testimonials/reviews and is fully responsive on all devices.
-
-#### 4. **Contact Page**
-
-- The Contact Page is divided into three sections, which allows the user to contact the Coach or book a session;
-
-- The Get in Touch and FAQs sections contain a contact form, map and answers to frequently asked questions to assist the user.
-
-- All sections are 75% width of the screen size and fully responsive on different sized devices.
-
-#### 5. **Footer**
-
-The Footer uses the same color as the Navigational Menu and provides social media links that all open in new tabs. The Footer also contains the site logo which takes the user back to the About Me Page.
-
-#### 6. **Learn more Page**
-
-A Learn More link was added to the Footer, which gives the user access to a list of educational links to external sites. This give the user the opportunity to find out more about Life Coaching and associated subjects.
+- The Footer uses a darker color than the Navigational Menu and includes the copyright text for the site.
 
 ### **Features to be added in the future**
 
 These features will be added where possible during further development phases:
 
-- A time/date picker to book available coaching sessions automatically. This is likely to be created/added to the site once Elwyn can establish set operating times for his business in the future.
-- A Legitimate form url address where the user's details can be stored and utilised by the Coach.
-
-- An option to have the website translated to Welsh if the user prefers.
-
-- More FAQs and Reviews as the business progresses.
+- An option to add additional players.
+- Different difficulty settings, with grids displaying fewer or greater numbers of cards.
+- Different themes, such as an animal theme, Xmas theme etc.
 
 [Back to top](#match-maker)
 
@@ -263,9 +232,7 @@ These features will be added where possible during further development phases:
 
 [CSS3](https://en.wikipedia.org/wiki/CSS) was used to design the layout and aesthetics of the website, including using effective typography and complimentary colors that would improve UX.
 
-### **Additional Languages Used**
-
-[Javascript](https://en.wikipedia.org/wiki/JavaScript) was used to implement functions that allowed the Hamburger menu in Navbar, and a carousel to display several testimonials. Both were applied for a better UX.
+[Javascript](https://en.wikipedia.org/wiki/JavaScript) was used to implement the Game and it's readout functions, and allowed the Hamburger menu toggler in the Navigation Menu.
 
 ### **Frameworks, Libraries and Programs Used**
 
@@ -288,6 +255,10 @@ These features will be added where possible during further development phases:
 9. [Squoosh](https://squoosh.app/) was used to reduce the file size of the images, and change from .jpg to .AVIF. This helped to improve the overall performance of the website.
 
 10. [Coolors](https://coolors.co/) was used to create a cohesive color scheme for the website.
+
+11. [YouTube](https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1112s) was used for help when building Match-Maker and it's function's.
+
+12. [Stackoverflow](https://stackoverflow.com/questions/16152073/prevent-bootstrap-modal-from-disappearing-when-clicking-outside-or-pressing-esca) was used when I needed advice when building different areas of code, and when any issues were encountered.
 
 [Back to top](#match-maker)
 
