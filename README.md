@@ -78,9 +78,9 @@ UX research was carried out through discussion with:
 
 #### **First Time User Goals**
 
-1. As a first-time user, I want to be able to access the game quickly and easily and be able to navigate the rest of the site with ease.
-2. As a first-time user, I want access to instructions on how to play Match-Maker.
-3. As a first-time user, I want to be able to locate the game creator's social media links for information on any other developments.
+1. As a first-time user, I want to be able to play the game I'm looking for quickly and easily and be able to navigate the website with ease.
+1. As a first-time user, I want access to instructions on how to play Match-Maker.
+3. As a first-time user, I want to be able to locate the game's developer's social media links to get in contact or find information on any other game developments.
 4. As a first-time user, I want to be engaged in the game and it's function.
 
 #### **Returning User Goals**
@@ -206,11 +206,15 @@ I have utilised free to use images sourced online. A fallback color is included 
 
 - The Introduction page displays Match-Maker's logo and a 'Play Now' link to the game;
 
-#### 3. **How to play page**
+#### 3. **Play Game page**
+
+
+
+#### 4. **How to play page**
 
 - The How to play Page includes a game guide to assist new players.
 
-#### 4. **Footer**
+#### 5. **Footer**
 
 - The Footer uses a darker color than the Navigational Menu and includes the copyright text for the site.
 
@@ -256,37 +260,29 @@ These features will be added where possible during further development phases:
 
 10. [Coolors](https://coolors.co/) was used to create a cohesive color scheme for the website.
 
-11. [YouTube](https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1112s) was used for help when building Match-Maker and it's function's.
+11. Javascript tutorials found on [YouTube](https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1112s) were used to help build Match-Maker and it's functions.
 
-12. [Stackoverflow](https://stackoverflow.com/questions/16152073/prevent-bootstrap-modal-from-disappearing-when-clicking-outside-or-pressing-esca) was used when I needed advice when building different areas of code, and when any issues were encountered.
+12. [Stackoverflow](https://stackoverflow.com/questions/16152073/prevent-bootstrap-modal-from-disappearing-when-clicking-outside-or-pressing-esca) was used when advice was needed when building different blocks of code, and when any issues were encountered.
 
 [Back to top](#match-maker)
 
 ## **Issues and Bugs**
 
-- Issue: Bootstrap navbar toggler would not collapse correctly, once expanded on a small device.
+- Issue: JQuery code used when adding the Modal to the playgame page did not work correctly.
 
-Solution - After some tutoring, it was noticed that I had an additional Javascript bundle link included in the HTML. Once deleted, the toggler was tested, and worked.
+Solution - After carrying out some debugging using Chrome developer tools and some tutoring, it was noticed that the JQuery link/bundle had not been added in the game script.js/html pages.
 
-- Issue: Gaps still appearing around .row and .col classes when importing from Bootstrap whilst using the no gutters class:
+- Issue: CodeAnywhere load issues, and save/autosave function not working correctly:
 
-Solution - Understanding Bootstrap 5, and being aware of updates. Eg. the class ".no gutters", to remove automatic padding that Bootstrap provides with .div rows and columns, became ".g-0". The solution to this was found on [Stack Overflow](https://stackoverflow.com/questions/21254889/how-to-remove-the-gutter-spacing-between-columns-in-bootstrap)
+Solution - Copied code back to CodeAnywhere from Github. Some code had to be re-written at times.
 
-- Issue: Bootstrap color automatically added when using it's .active class for the navigation bar.
+- Issue: Bootstrap color automatically added when using it's .active class for the navigation bar. The CodeAnywhere terminal highlighted the fact that using !Important was not a foolproof way of writing code, and should not be used if possible.
 
-Solution - Resorted to using an !Important color in navbar CSS to overide.
-
-- Issue: Navigation menu was not responsive when changing to different devices.
-
-Solution - When trying to make the NavBar responsive via CSS, it was found that this could be done via a Bootstrap .fluid class.
+Solution - After debugging using Chrome developer tools, I found there was a Bootstrap color added to the navigation bar, which could be overidden using the .navbar-nav .nav-link.active class. CSS !Important attribute was removed from code and color of navigation bar text was changed.
 
 - Issue: Ports not working/updating several times on Codeanywhere IDE.
 
 Solution - I regularly had to change the Port or reset to make the updates to the site work, so I could see the Website's progress.
-
-- Issue/Bug: README.md automatically began deleting itself while updating, when laptop was plugged into a smart TV.
-
-Solution - README.md had to be copied and pasted from Github repository. Some of the Readme had to be re-written.
 
 ## **Deployment**
 
@@ -303,7 +299,7 @@ The website was deployed to Github pages using the following steps:
 5. Under "Source", click the dropdown called "None", select "Master", and then click the “Save” button.
 6. The page will automatically refresh.
 7. Click on Actions and then 'Deploy Static Content to Pages'
-8. There’s a notification message, your site is live at [https://coder4916.github.io/ci_milestone/], that provides the now published website on the pages tab in Github settings.
+8. There’s a notification message, your site is live at [https://], that provides the now published website on the pages tab in Github settings.
 
 ### **Forking the Github Repository**
 
@@ -337,34 +333,27 @@ By cloning a GitHub Repository you can create a local copy on your computer of t
 
 #### **First Time User Goal**
 
-1. As a first-time user, I want to be able to find the information I'm looking for quickly and easily and be able to navigate the website with ease.
+1. As a first-time user, I want to be able to play the game I'm looking for quickly and easily and be able to navigate the website with ease.
 
 - The navigation bar is clearly defined, with an .active attribute to display to the user which page they are on. A subtle hover function when the user moves the cursor over the menu items increases user friendliness, and icons are attached to each option to assist the user with their choice.
-- A logo on the top of the page and in the footer leads the user back to the Home page increasing accessibility further.
-- A 'Back to Top' button is included on every page so the user can return to the navigation bar where required.
-- Links to further information can be easily accessed via each of the page's footer menu.
 
 ![Navigation Bar Screenshot](/assets/images/navigation-screenshot.png)
 
-2. As a first-time user, I want to learn about the Coach/Owner and find out about their previous qualifications/experience.
+2. As a first-time user, I want access to instructions on how to play Match-Maker.
 
 - The Home page contains three sections; The Coach, Background and Tried and Tested, which include information about the Coach's experience, background, qualifications and people he has helped. This is where the user will begin when arriving at the Website.
 
 ![Home Page Screenshot](/assets/images/home-page-screenshot.png)
 
-3. As a first-time user, I want to know what type of coaching services the Owner/Website offers.
+3. As a first-time user, I want to be able to locate the game's developer's social media links to get in contact or find information on any other game developments.
 
-- A second page has a 'What to Expect' section which includes a step by step guide based on an initial coaching session. A carousel also informs the reader of previous client experiences.
-
-![Coaching Page Screenshot](/assets/images/coaching-page-screenshot.png)
-
-4. As a first-time user, I want to be able to locate the owner's social media links to see their followings and find any potential reviews etc.
+4. As a first-time user, I want to be engaged in the game and it's function.
 
 - The Coach's LinkedIn profile is attached to the footer. There is also a carousel on the coaching page which displays previous client reviews.
 
 ![Footer Screenshot](/assets/images/footer-screenshot.png)
 
-5. As a first-time user, I want to have the option to contact the owner further if required.
+1. As a first-time user, I want to have the option to contact the owner further if required.
 
 - A contact form and the Coach's contact details are available on a Contact page on the website. A link to this is included in the footer of each page, as well as via the navigation bar.
 
@@ -526,8 +515,8 @@ All external links/additional content was sourced via YouTube and Google Books.
 ## **Acknowledgements**
 
 - My mentor, Oluwaseun Owonikoko, for her guidance and helpful feedback on all aspects of the Website.
-- The Code Institute tutors who helped me with some of the issues I had when building the site, and for supporting me with the testing element of my Readme.md file.
-- My friend and mentor Elwyn Davies, for the site features and his continued support throughout, as well as his insight into the coaching world.
-- My wife Beth for her constant support throughout the first module, and for proof reading and testing my site material.
+- The Code Institute tutors who helped me with some of the issues I had when building the game site.
+- My Daughter Evelyn, for testing the game (several times) and helping to make sure the game worked properly!
+- My wife Beth for her constant support throughout the second module, and for proof reading and testing my game material.
 
 [Back to top](#match-maker)
