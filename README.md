@@ -29,8 +29,9 @@
     - [**Current Features**](#current-features)
       - [1. **Header**](#1-header)
       - [2. **Introduction page**](#2-introduction-page)
-      - [3. **How to play page**](#3-how-to-play-page)
-      - [4. **Footer**](#4-footer)
+      - [3. **Play Game page**](#3-play-game-page)
+      - [4. **How to play page**](#4-how-to-play-page)
+      - [5. **Footer**](#5-footer)
     - [**Features to be added in the future**](#features-to-be-added-in-the-future)
   - [**Technologies Used**](#technologies-used)
     - [**Main Languages used**](#main-languages-used)
@@ -48,7 +49,6 @@
   - [**Manual Testing**](#manual-testing)
     - [**Responsiveness**](#responsiveness)
     - [**Links Testing**](#links-testing)
-    - [**Forms Testing**](#forms-testing)
   - [**Autoprefixer CSS**](#autoprefixer-css)
   - [**W3C Validator Testing**](#w3c-validator-testing)
   - [**Lighthouse Testing**](#lighthouse-testing)
@@ -56,7 +56,6 @@
   - [**Credits**](#credits)
     - [**Code**](#code)
     - [**Images**](#images)
-    - [**Additional contents**](#additional-contents)
   - [**Acknowledgements**](#acknowledgements)
 
 ## **Introduction**
@@ -80,8 +79,8 @@ UX research was carried out through discussion with:
 
 1. As a first-time user, I want to be able to play the game I'm looking for quickly and easily and be able to navigate the website with ease.
 1. As a first-time user, I want access to instructions on how to play Match-Maker.
-3. As a first-time user, I want to be able to locate the game's developer's social media links to get in contact or find information on any other game developments.
-4. As a first-time user, I want to be engaged in the game and it's function.
+1. As a first-time user, I want to be able to locate the game's developer's social media links to get in contact or find information on any other game developments.
+1. As a first-time user, I want to be engaged in the game and it's function.
 
 #### **Returning User Goals**
 
@@ -98,7 +97,7 @@ UX research was carried out through discussion with:
 
 ### **Research**
 
-A lot of research was carried out online, where I played different games in order to identify something which could be educational and entertaining and understand the capability of a javascript platform. Also being actively aware of my daughter's reaction to these games, for example she became particulary interested in the Math game built during the CI module phase.  I also considered offline research through general play with my daughter; she enjoys games that are easy to understand and quick to win, such as Snap and Memory.
+A lot of research was carried out online, where I played different games in order to identify something which could be educational and entertaining and understand the capability of a javascript platform. Also being actively aware of my daughter's reaction to these games, for example she became particulary interested in the Math game built during the CI module phase. I also considered offline research through general play with my daughter; she enjoys games that are easy to understand and quick to win, such as Snap and Memory.
 
 - Sector Research
 
@@ -139,19 +138,19 @@ Match-Maker has further considerations as below:
 
 Based on the research, goals, and the considerations above, I considered what should be implemented on the website. I mapped the ideas based on their importance, user needs, and viability (given limited time and resources), to determine which ideas were going to be included and which were not:
 
-| Features/Ideas           | Importance |  Viability |
-| ------------------------ | :--------: | :--------: |
-| A. Game instructions     |     5      |      5     |
-| B. Choice of difficulty  |     3      |      3     |
-| C. Player vs player      |     3      |      3     |
-| D. Game reviews          |     3      |      2     |
-| E. Game timer            |     4      |      5     |
-| F. Game move counter     |     4      |      5     |
-| G. Game score counter    |     4      |      5     |
-| H. Social Media links    |     1      |      4     |
-| I. Different themes      |     3      |      3     |
-| J. Gaming links          |     3      |      3     |
-| K. Feedback Form         |     3      |      4     |
+| Features/Ideas          | Importance | Viability |
+| ----------------------- | :--------: | :-------: |
+| A. Game instructions    |     5      |     5     |
+| B. Choice of difficulty |     3      |     3     |
+| C. Player vs player     |     3      |     3     |
+| D. Game reviews         |     3      |     2     |
+| E. Game timer           |     4      |     5     |
+| F. Game move counter    |     4      |     5     |
+| G. Game score counter   |     4      |     5     |
+| H. Social Media links   |     1      |     4     |
+| I. Different themes     |     3      |     3     |
+| J. Gaming links         |     3      |     3     |
+| K. Feedback Form        |     3      |     4     |
 
 ### 2. **Scope Plane**
 
@@ -184,7 +183,7 @@ The fonts I used for the website were sourced from [Google Fonts](https://fonts.
 
 #### **Imagery**
 
-I have utilised free to use images sourced online. A fallback color is included if the main body image doesn't load. [The background image](https://www.pexels.com/photo/close-up-photo-of-green-background-3117225/) was sourced from [Pexels](https://www.pexels.com/) and was created by [Eriks Abzinovs](https://www.pexels.com/@pixworthmedia/). The card pattern was sourced from[Freepik](https://www.freepik.com/free-vector/watercolor-geometric-background_23849498.htm), and the game's logo was created using [Canva](https://www.canva.com/).
+I have utilised free to use images sourced online. A fallback color is included if the main body image doesn't load.
 
 [Back to top](#match-maker)
 
@@ -208,7 +207,7 @@ I have utilised free to use images sourced online. A fallback color is included 
 
 #### 3. **Play Game page**
 
-
+- The Play Game page contains Match-Maker, consisting of a grid of cards created using CSS and Javascript, which can be flipped to reveal different shapes. There are 10 pairs of shapes to find. A Bootstrap Modal which loads on startup gives the user an option to play Match-Maker. During game-play a timer, score and move counter are displayed in a readout box, left of the game grid. A reset button is also available to the user, which when clicked, reloads the document/game, revealing the Modal to play game again.
 
 #### 4. **How to play page**
 
@@ -242,47 +241,48 @@ These features will be added where possible during further development phases:
 
 1. [Bootstrap 5.3](https://getbootstrap.com/) was used to assist with the responsiveness and styling of the website, as well as adding components.
 
-2. [Google Fonts](https://fonts.google.com/) was used to import the “Roboto” and “Lexend” fonts into the html file, and were used on all parts of the site.
+2. The [Jquery](https://jquery.com/) library was linked to sh3w the Modal when the main Document loads, and to prevent a user from removing the Modal by clicking outside of the box.
+42. [Google Fonts](https://fonts.google.com/) was used to import the “Roboto” and “Lexend” fonts into the html file, and were used on all parts of t5e site.
 
-3. [Font Awesome](https://fontawesome.com/) was used throughout the website to add icons for aesthetic and UX purposes.
+3. [Font Awesome](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
 
-4. [Codeanywhere](https://app.codeanywhere.com/) IDE was used for creating the website and using the built in terminal to push the site to GitHub.
+46 [Codeanywhere](https://app.codeanywhere.com/) IDE was used for creating the website and using the built in terminal to push the site to GitHub.
 
-5. [GitHub](https://github.com/) was used to store the project's code after being pushed from Codeanywhere.
+5. [GitHub](https://github.com/) 7as used to store the project's code after being pushed from Codeanywhere.
 
-6. [Balsamiq Wireframes](https://balsamiq.com/wireframes/) were used to design the general layout and feel of the website and the high fidelity mock up during the design process.
+6. [Balsamiq Wireframes](https://balsamiq.com/wireframes/) were used to desi8n the general layout and feel of the website and the high fidelity mock up during the design process.
 
-7. [Autoprefixer CSS](https://autoprefixer.github.io/) was used to add vendor prefixes to the CSS rules, to ensure that they work across all browsers.
+7. [Autoprefixer CSS](https://autoprefixer.github.io/) was used to add vendor prefixes to the CSS 9ules, to ensure that they work across all browsers.
 
-8. [Am I Responsive](https://ui.dev/amiresponsive?url=https://8002-coder4916-ci-milestone-ylxy4w9e48.us2.codeanyapp.com/index.html) was used to preview the website across a variety of popular devices.
+8. [Am I Responsive](https://ui.dev/amiresponsive?url=https://8002-coder4916-ci-milestone-ylxy4w9e48.us2.codeanyapp.com/inde10.html) was used to preview the website across a variety of popular devices.
 
-9. [Squoosh](https://squoosh.app/) was used to reduce the file size of the images, and change from .jpg to .AVIF. This helped to improve the overall performance of the website.
+9. [Squoosh](https1:/squoosh.app/) was used to reduce the file size of the images, and change from .jpg to .AVIF. This helped to improve the overall performance of the webst2e.
 
 10. [Coolors](https://coolors.co/) was used to create a cohesive color scheme for the website.
 
 11. Javascript tutorials found on [YouTube](https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1112s) were used to help build Match-Maker and it's functions.
 
-12. [Stackoverflow](https://stackoverflow.com/questions/16152073/prevent-bootstrap-modal-from-disappearing-when-clicking-outside-or-pressing-esca) was used when advice was needed when building different blocks of code, and when any issues were encountered.
+12.3[Stackoverflow](https://stackoverflow.com/questions/16152073/prevent-bootstrap-modal-from-disappearing-when-clicking-outside-or-pressing-esca) was used when advice was needed when building different blocks of code, and when any issues were encountered.
 
 [Back to top](#match-maker)
 
 ## **Issues and Bugs**
 
-- Issue: JQuery code used when adding the Modal to the playgame page did not work correctly.
+- Issue: The Modal on the playgame page did not work correctly initially when writing JQuery into the Document to reveal the Modal load on startup.
 
 Solution - After carrying out some debugging using Chrome developer tools and some tutoring, it was noticed that the JQuery link/bundle had not been added in the game script.js/html pages.
 
 - Issue: CodeAnywhere load issues, and save/autosave function not working correctly:
 
-Solution - Copied code back to CodeAnywhere from Github. Some code had to be re-written at times.
+Solution - Copied code back to CodeAnywhere from Github. Some code had to be re-written on a few occasions.
 
-- Issue: Bootstrap color automatically added when using it's .active class for the navigation bar. The CodeAnywhere terminal highlighted the fact that using !Important was not a foolproof way of writing code, and should not be used if possible.
+- Issue: Bootstrap color automatically added when using it's active class for the navigation bar. The CodeAnywhere terminal highlighted the fact that using !Important was not a foolproof way of writing code, and should not be used if possible.
 
 Solution - After debugging using Chrome developer tools, I found there was a Bootstrap color added to the navigation bar, which could be overidden using the .navbar-nav .nav-link.active class. CSS !Important attribute was removed from code and color of navigation bar text was changed.
 
 - Issue: Ports not working/updating several times on Codeanywhere IDE.
 
-Solution - I regularly had to change the Port or reset to make the updates to the site work, so I could see the Website's progress.
+Solution - I regularly had to change the Terminal Port or reset to make the updates to the site work, so I could see the Website's progress. This was sometimes an issue, as I would doubt the reliability of the code I had written, which sidetracked my progress a few times.
 
 ## **Deployment**
 
@@ -337,68 +337,40 @@ By cloning a GitHub Repository you can create a local copy on your computer of t
 
 - The navigation bar is clearly defined, with an .active attribute to display to the user which page they are on. A subtle hover function when the user moves the cursor over the menu items increases user friendliness, and icons are attached to each option to assist the user with their choice.
 
-![Navigation Bar Screenshot](/assets/images/navigation-screenshot.png)
+![Navigation Bar screenshot]()
 
 2. As a first-time user, I want access to instructions on how to play Match-Maker.
 
-- The Home page contains three sections; The Coach, Background and Tried and Tested, which include information about the Coach's experience, background, qualifications and people he has helped. This is where the user will begin when arriving at the Website.
+- The How to play Page includes a game guide to assist new players.
 
-![Home Page Screenshot](/assets/images/home-page-screenshot.png)
+![How to play screenshot]()
 
 3. As a first-time user, I want to be able to locate the game's developer's social media links to get in contact or find information on any other game developments.
 
+![Social Media screenshot]()
+
 4. As a first-time user, I want to be engaged in the game and it's function.
 
-- The Coach's LinkedIn profile is attached to the footer. There is also a carousel on the coaching page which displays previous client reviews.
+- A score and moves counter are included, as well as a timer to create further engagement.
 
-![Footer Screenshot](/assets/images/footer-screenshot.png)
-
-1. As a first-time user, I want to have the option to contact the owner further if required.
-
-- A contact form and the Coach's contact details are available on a Contact page on the website. A link to this is included in the footer of each page, as well as via the navigation bar.
-
-![Contact Page Screenshot](/assets/images/contact-screenshot.png)
+![Counters and Timer screenshot]()
 
 #### **Returning User Goal**
 
-1. As a returning user, I want to know if there's an FAQs page for any questions I may have.
+1. As a returning user, I want to be able to access the game quickly and easily.
+2. As a returning user, I want to be engaged in the game and it's function.
+3. As a returning user, I want access instructions if I need a refresher on how to play the game.
+4. As a returning user, I want to be able to locate the game creator's social media links for information on any other developments or updates.
 
-- The FAQ section on the Contact page provides the answers to some of the questions that the user might have.
-- The contact form also functions as one of the options for the user to ask questions.
-
-2. As a returning user, I want access to different ways of contacting the owner further if required.
-
-- The contact form functions as the main means of communication for the user to contact the Coach.
-- The Coach's phone number is provided in the Get In Touch section.
-- The Coach's email address is also provided in the Get In Touch section if the user prefers not to use the contact Form.
-- A social media link can also can be used as an option to contact the Coach via LinkedIn. The social media link is located in the Footer.
-
-![Returning User Screenshot](/assets/images/returning-user-stories.png)
-
-3. As a returning user I want to easily access further information as required.
-
-- For any users that want to know more about Life Coaching, there are further external links to coaching material contained in the learn-more page via a learn more link in each page's footer.
-
-![Useful Links Screenshot](/assets/images/useful-links.png)
+![Returning User Screenshot]()
 
 #### **Frequent Visitor Goal**
 
-1. As a frequent user, I want to know if there will be chance to give feedback on the website.
+1. As a frequent user, I want to be engaged in the game and it's function.
+2. As a frequent user, I want to access game instructions easily.
+3. As a frequent user, I want to be able to contact the owner of the site if required.
 
-- A link to a feedback form is available in the footer.
-
-![Feedback Link Screenshot](/assets/images/feedback.png)
-
-2. As a frequent user I want to access information easily.
-
-- Access to further information is available via a learn more link in each page footer.
-- The Contact Form can also be used to contact the Coach to find out more.
-
-3. As a frequent user I want to be able to contact the owner easily.
-
-- The Coach can be contacted via a contact form, or by phone, email, or via LinkedIn. This gives the user options, depending on what's preferable for them.
-
-![Frequent User Screenshot](/assets/images/contact-screenshot.png)
+![Frequent User Screenshot]()
 
 ## **Manual Testing**
 
@@ -408,28 +380,21 @@ I used web developer tools extensively throughout the project to update and corr
 
 Below are some examples of sections that I have tested and checked for full responsiveness on all devices. These images show the sections at each [Breakpoint](https://getbootstrap.com/docs/5.3/layout/breakpoints/#core-concepts).
 
-![Header](/assets/images/header-responsive.png)
+![Header]()
 
-![Form](/assets/images/form-responsive.png)
+![Game]()
 
-![Background Section](/assets/images/background-responsive.png)
+![Play now link]()
 
-![Footer](/assets/images/footer-responsive.png)
+![Footer]()
 
 ### **Links Testing**
 
 Once deployed, the website links were tested to ensure that:
 
-All navigation external/internal links are working correctly.
-The social media button and the learn more page links are working and opening in a new tab. All links were working and set to a relative filepath.
+All navigation external/internal links are working correctly and set to a relative filepath where required.
+The game, it's functions and counters are working correctly.
 Hovering and Active states are working.
-
-### **Forms Testing**
-
-The Think-In-Space Form was also tested to make sure that
-the required fields are working, and the form sends the input data correctly.
-
-![Input Data sent to CI mock server](/assets/images/ci-confirm-form.png)
 
 ## **Autoprefixer CSS**
 
@@ -441,25 +406,25 @@ The [W3C Markup Validator](https://validator.w3.org/) and W3C CSS Validator Serv
 
 The images below are snapshots of each page of the website after the code has been put through the Validator.
 
-![W3C Markup Validator](/assets/images/index.html-checked.png)
+![W3C Markup Validator]()
 
-![W3C Markup Validator](/assets/images/coaching.html-checked.png)
+![W3C Markup Validator]()
 
-![W3C Markup Validator](/assets/images/contact.html-checked.png)
+![W3C Markup Validator]()
 
-![W3C Markup Validator](/assets/images/style.css-checked.png)
+![W3C Markup Validator]()
 
 ## **Lighthouse Testing**
 
-Chrome Lighthouse testing was used to check the performance, accessibility, best practices, and SEO. After applying some changes to make the performance faster, including resizing all of the images, compressing image/changing the file size and adding a rel=noopener to all external links, the results below were achieved:
+Chrome Lighthouse testing was used to check the performance, accessibility, best practices, and SEO. After applying some changes to make the performance faster, including resizing all of the images and compressing images/ reducing their size, the results below were achieved:
 
 - Desktop:
 
-![Think-In-Space Lighthouse testing](/assets/images/lighthouse-testing.png)
+![Match-Maker Lighthouse testing]()
 
 - Mobile:
 
-![Think-In-Space Lighthouse testing](/assets/images/lighthouse-testing-mobile.png)
+![Match-Maker Lighthouse testing]()
 
 ## **Further Testing**
 
@@ -477,46 +442,32 @@ Friends and family members were asked to review the site and documentation to po
 
 ### **Code**
 
-1. [Bootstrap 5.3](https://getbootstrap.com/): Bootstrap was used extensively throughout the project, including the following components:
+1. [Bootstrap 5.3](https://getbootstrap.com/): Bootstrap was used throughout the project, including the following components:
 
 - [A collapsible and expandable navigation bar](https://getbootstrap.com/docs/5.3/components/navbar/#toggler)
-- [A Carousel](https://getbootstrap.com/docs/5.3/components/carousel/)
-- [A Bootstrap grid system](https://getbootstrap.com/docs/5.3/layout/grid/#example)
+- [A Javascript Modal](https://getbootstrap.com/docs/5.3/components/modal/)
 
-2. [stackoverflow](https://stackoverflow.com/questions/21254889/how-to-remove-the-gutter-spacing-between-columns-in-bootstrap): Was used to find solutions to problems/issues when building the website, for example, finding out more information about an update when removing Bootstrap padding in a grid system.
+2. [stackoverflow](https://stackoverflow.com/questions/29971898/how-to-create-an-accurate-timer-in-javascript): was used to find solutions to problems/issues during development and when building the game timer.
 
-3. [w3Schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp): Was used to get assitance with creating the website, for example when creating the 'back to top' button using pure CSS.
+3. [Youtube](https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1112s) game build tutorials by [Marina Ferreira](https://marina-ferreira.github.io/memory-game/) were used to help guide me on the construction of Match-Maker using Javascript.
 
 4. [Autoprefixer CSS](https://autoprefixer.github.io/):
    Was used to add different vendor prefixer to CSS.
 
 ### **Images**
 
-The Coach created the Website Logo using [Hatchful by Shopify](https://www.shopify.com/tools/logo-maker?syclid=ckaok3ausvis73ecc1gg&utm_campaign=Hatchful&utm_content=Onboarding_1&utm_medium=email&utm_source=mozart).
+- [The background image](https://www.pexels.com/photo/close-up-photo-of-green-background-3117225/) was sourced from [Pexels](https://www.pexels.com/) and was created by [Eriks Abzinovs](https://www.pexels.com/@pixworthmedia/).
 
-I used the following image, sourced from [Pexels](https://www.pexels.com/) for the background of each site page:
+- The card pattern was sourced from[Freepik](https://www.freepik.com/free-vector/watercolor-geometric-background_23849498.htm).
 
-[Close up photo of pebbles image; by Ave Calvar Martinez](https://www.pexels.com/photo/close-up-photo-of-pebbles-3010168/)
-
-The following images Elwyn and I sourced from [Burst](https://www.shopify.com/stock-photos/photos/senior-teaching-young-man?c=teacher) and [Pexels](https://www.pexels.com/) to populate each page section:
-
-[Senior teaching young man; by Shopify](https://www.shopify.com/stock-photos/photos/senior-teaching-young-man?c=teacher)
-
-[Hiker climbing mountains; by Brodie](https://www.shopify.com/stock-photos/photos/hiker-climbing-mountains?c=landscape)
-
-[Question Marks; by Leeloo TheFirst](https://www.pexels.com/photo/question-marks-on-paper-crafts-5428836/)
-
-All other photos/images used were sourced from Elwyn's photo gallery. They are images of local available Blue/Green space, which Elwyn is planning on using for his clientele.
-
-### **Additional contents**
-
-All external links/additional content was sourced via YouTube and Google Books.
+The game's logo was created using [Canva](https://www.canva.com/).
 
 ## **Acknowledgements**
 
 - My mentor, Oluwaseun Owonikoko, for her guidance and helpful feedback on all aspects of the Website.
-- The Code Institute tutors who helped me with some of the issues I had when building the game site.
+- The Code Institute tutors who helped me with several of the issues I had when building the game site.
 - My Daughter Evelyn, for testing the game (several times) and helping to make sure the game worked properly!
-- My wife Beth for her constant support throughout the second module, and for proof reading and testing my game material.
+- My wife Beth for her constant support throughout the second module, and for proof reading my Readme and testing my game material.
+- Peer Code Review
 
 [Back to top](#match-maker)

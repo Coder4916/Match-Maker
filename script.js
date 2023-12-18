@@ -1,106 +1,224 @@
-let cards = document.querySelectorAll('.card'); /* All html elements within the DOM with the class of card are contained within the cards variable*/
-cards.forEach(card => card.addEventListener('click', flipCard)); /* A click event listener is added to each card, and the flipCard function is also applied to them */
+/* All html elements within the DOM with 
+the class of card are stored in the 
+'cards' variable:*/
+let cards = document.querySelectorAll(".card");
 
-let cardFlipped = false; /* cardFlipped is initially set to false*/
-let lockBoard = false; /* The game grid is locked (Prevents a pair of cards from being flipped while the first pair is checked for a match)*/
-let firstCard, secondCard; /* A variable, which initiates firstCard and secondCard */
+/* A click event listener is added to 
+each card, and the flipCard function 
+is also applied to them:*/
+cards.forEach((card) => card.addEventListener("click", flipCard));
+
+
+/* cardFlipped is initially set to false*/
+let cardFlipped = false;
+
+/* The game grid is initially locked, 
+prevents a pair of cards from being 
+flipped:*/
+let lockBoard = false;
+
+/* A variable, which initiates 
+firstCard and secondCard:*/
+let firstCard, secondCard;
+
 let moves = 0;
 let score = 0;
 let seconds = 0;
 let minutes = 0;
 
-    document.querySelector('#playButton').addEventListener('click', function() {
+document.querySelector("#playButton").addEventListener("click", function () {
     seconds += 1;
     interval = setInterval(function () {
-    let timerSeconds = document.querySelector('.timerSecs')
-    timerSeconds.textContent = `${seconds++}`;
-    if (seconds === 60){
-        seconds = 0;
-    }
-    if (seconds === (0+1)){
-            let timerMins = document.querySelector('.timerMins')
+        let timerSeconds = document.querySelector(".timerSecs");
+        timerSeconds.textContent = `${seconds++}`;
+        if (seconds === 60) {
+            seconds = 0;
+        }
+        if (seconds === (0 + 1)) {
+            let timerMins = document.querySelector(".timerMins");
             timerMins.textContent = ` Time: ${minutes += 1}`;
         }
     }, 1000);
 });
 
-let resetButton = document.querySelector('#reset-game-btn').addEventListener('click', function(){
+let resetButton = document.querySelector("#reset-game-btn");
+resetButton.addEventListener("click", function () {
     reset();
 });
 
-function flipCard() { /* A function to monitor the first and second cards clicked on, with the 'this' event used to monitor the clicks. */
-        
-    if (lockBoard) return; /* If the board is now locked (true) because 2 cards have already been flipped, return the flipcard function*/
+/* A function to monitor 
+the first and second cards 
+clicked on, with the 'this'
+event used to monitor the clicks:*/
+function flipCard() {
 
-    if (this === firstCard) return; /* If the card clicked (this card) is the first card clicked, return the flipCard function*/
-    
-    this.classList.add('flip'); /* The card clicked on by the user (this card) has a class appended to it, the 'flip' class, which rotates the card 180 degrees along it's Y axis (style.css).*/
-    if (!cardFlipped) { /* If cardFlipped is false */
-        cardFlipped = true; /* Make cardFlipped true */
-        firstCard = this; /* Acknowledge this is the first card flipped */
+    /* If the board is now locked (true) 
+    because 2 cards have already been 
+    flipped, return the flipcard function:*/
+    if (lockBoard) return;
 
-        return; /* Return the flipCard function once the click event happens*/
+    /* If the card clicked (this card) is 
+    the first card clicked, return the 
+    flipCard function:*/
+    if (this === firstCard) return;
+
+    /* The card clicked on by the user 
+    (this card) has a class appended to 
+    it, the 'flip' class, which rotates 
+    the card 180 degrees along it's Y 
+    axis (style.css):*/
+    this.classList.add("flip");
+    /* If cardFlipped is false:*/
+    if (!cardFlipped) {
+
+        /* Make cardFlipped true:*/
+        cardFlipped = true;
+
+        /* Acknowledge this is 
+        the first card flipped:*/
+        firstCard = this;
+
+        /* Return the flipCard function 
+        once the click event happens:*/
+        return;
     }
+    /* cardFlipped is equal to false 
+    to allow for second card*/
+    cardFlipped = false;
 
-    cardFlipped = false; /* cardFlipped is equal to false to allow for second card*/
-    secondCard = this; /* Acknowledge second card is flipped */
-    moves++; /* Adds a move to the move counter when both cards have been flipped*/
-    document.querySelector('.moves').innerHTML = ` Moves: ${moves}`; /* Gets the html element with a class of .moves and adds the move to the html element */
+    /* Acknowledge second card is 
+    flipped:*/
+    secondCard = this;
 
-    checkCardsMatch(); /* A function within the flipCard function, which evaluates whether the two cards flipped are a match */
+    /* Adds a move to the move
+    counter when both cards have
+    been flipped:*/
+    moves++;
+
+    /* Gets the html element with 
+    a class of .moves and adds the 
+    move to the .move html element:*/
+    document.querySelector(".moves").innerHTML = ` Moves: ${moves}`;
+
+    /* A function executed within the 
+    flipCard function, which evaluates 
+    whether the two cards flipped are 
+    a match:*/
+    checkCardsMatch();
 };
 
-function checkCardsMatch() { /* A function to check whether the first and second cards match */
+/* A function to check whether the 
+first and second cards match:*/
+function checkCardsMatch() {
 
-    let isMatch = firstCard.dataset.shape === secondCard.dataset.shape; /* isMatch variable which evaluates whether the dataset (image) in index.html, on the first card clicked by the user, matches the second card clicked */
-    isMatch ? collectCards() : returnCards(); /* Ternary Operator to decide whether to collect the cards, or return them to original positions (unflipped). */
+    /* isMatch variable which evaluates 
+    whether the dataset in .html page, 
+    on the first card clicked by the user, 
+    matches the second card clicked:*/
+    let isMatch = firstCard.dataset.shape === secondCard.dataset.shape;
+
+    /* Ternary Operator to decide whether 
+    to collect the cards, or return them 
+    to original positions (unflipped):*/
+    isMatch ? collectCards() : returnCards();
+
+    /*If the cards are a match, add one to
+    the score counter:*/
     if (isMatch) {
         score += 2;
-        document.querySelector('.score').innerHTML = ` Score: ${score}`;
+        document.querySelector(".score").innerHTML = ` Score: ${score}`;
     }
-        if (score === 20) {
-            clearInterval(interval);
+    /*If the score counter reaches 20,
+    all pairs have been found:*/
+    if (score === 20) {
+        clearInterval(interval);
         alert("Well done, you found all the pairs!");
-        }
     }
-
-function collectCards() { /* A function to collect/keep the cards flipped, once they have been matched correctly by the player */
-    firstCard.removeEventListener('click', flipCard);
-    secondCard.removeEventListener('click', flipCard); /* The function removes the click event listeners from both cards if they are a match. */
-
-    resetCards(); /* The conditions of cardFlipped and lockBoard are set to false, and first/secondCard to null */
 }
 
-function returnCards() { /* A function to return any un-matched cards to their original position */
-    lockBoard = true; /* The game grid is locked while two cards are flipped so no other cards can be selected */
+/* A function to collect/keep the 
+cards flipped, once they have been 
+matched correctly by the player:*/
+function collectCards() {
 
-    setTimeout(() => { /* A function with a timed condition, which removes the 'flip' class, that was applied to the cards clicked on, in the flipCard function */
-
-        firstCard.classList.remove('flip'); /* 'Flip' class removed from first card */
-        secondCard.classList.remove('flip'); /* 'Flip' class removed from second card */
-
-        resetCards(); /* The conditions of cardFlipped and lockBoard are set to false, and first/secondCard to null */
-    }, 1500); /* The setTimeout function is set to 1500 milliseconds, to give the cards time to show before they are 'un-flipped' */
+    /* The function removes the click 
+    event listeners from both cards if 
+    they are a match:*/
+    firstCard.removeEventListener("click", flipCard);
+    secondCard.removeEventListener("click", flipCard);
+    /* The conditions of cardFlipped and 
+    lockBoard are set to false, and 
+    first/secondCard to null */
+    resetCards();
 }
 
-function resetCards() { /* A function to reset the conditions of the cards if they don't match */
+/* A function to return any un-matched 
+cards to their original position:*/
+function returnCards() {
+
+    /* The game grid is locked while two 
+    cards are flipped so no other cards 
+    can be selected:*/
+    lockBoard = true;
+
+    /* A function with a timed condition, 
+    after which the function removes the 
+    'flip' class, that was applied to the 
+    cards clicked on, in the flipCard function:*/
+    setTimeout(() => {
+
+        /* 'Flip' class removed from first card:*/
+        firstCard.classList.remove("flip");
+        /* 'Flip' class removed from second card:*/
+        secondCard.classList.remove("flip");
+
+        /* The conditions of cardFlipped and 
+        lockBoard are set to false, and 
+        first/secondCard to null */
+        resetCards();
+        /* The setTimeout function 
+        is set to 1500 milliseconds, 
+        to give the cards time to show 
+        before they are 'un-flipped' */
+    }, 1500);
+}
+
+/* A function to reset the conditions 
+of the cards if they don't match:*/
+function resetCards() {
     cardFlipped = false;
     lockBoard = false;
     firstCard = null;
     secondCard = null;
 }
 
-(function shuffle() { /* A function to shuffle the cards randomly and then put them into the game grid */
-    cards.forEach(card => { /* Using the cards variable, the arrow function loops through each card*/
-        let shuffleCards = Math.floor(Math.random() * 20); /* While looping through each card in the game grid, a random number is also created for each card */
-        card.style.order = shuffleCards; /* The cards are the assigned random numbers/positions in the game grid and shuffled */
+/* A function to shuffle the cards 
+randomly and then put them into the 
+game grid:*/
+(function shuffle() {
+
+    /* Using the cards variable, the 
+    arrow function loops through each card*/
+    cards.forEach(card => {
+
+        /* While looping through each card 
+        in the game grid, a random number is 
+        also generated for each card */
+        let shuffleCards = Math.floor(Math.random() * 20);
+
+        /* The cards are the assigned random 
+        numbers/positions in the game grid 
+        and shuffled */
+        card.style.order = shuffleCards;
     });
 })();
 
-function reset(){
-    window.location.reload()
+/*A function to reset the board when 
+the game is finished*/
+function reset() {
+    window.location.reload();
 }
 
 
-    
-           
+
+
