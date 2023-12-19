@@ -1,6 +1,6 @@
 # **Match-Maker**
 
-![Am I Responsive Image](https://ui.dev/amiresponsive?url=https://coder4916.github.io/Match-Maker/playGame.html)
+![Am I Responsive Image](/assets/images/amIResponsive.png)
 
 ## **Table of Contents**
 
@@ -268,7 +268,11 @@ These features will be added where possible during further development phases:
 
 ## **Issues and Bugs**
 
--Issue: 'Modal is not a function' was highlighted in the dev tools console window.  
+-Issue: 'Modal is not a function' was highlighted in the dev tools console window.
+
+Solution
+
+- Issue: When using JsHint, it was found that a ternary expression required fixing 
 
 - Issue: The Modal on the playgame page did not work correctly initially when writing JQuery into the Document to reveal the Modal load on startup.
 
