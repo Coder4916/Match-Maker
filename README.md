@@ -414,6 +414,8 @@ The images below are snapshots of each page of the website after the code has be
 
 ![W3C Markup Validator]()
 
+The [JSHint](https://jshint.com/) validator tool was used to ensure there were no syntax errors in the script.js file.
+
 ## **Lighthouse Testing**
 
 Chrome Lighthouse testing was used to check the performance, accessibility, best practices, and SEO. After applying some changes to make the performance faster, including resizing all of the images and compressing images/ reducing their size, the results below were achieved:
