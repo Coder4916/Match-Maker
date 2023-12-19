@@ -242,25 +242,25 @@ These features will be added where possible during further development phases:
 1. [Bootstrap 5.3](https://getbootstrap.com/) was used to assist with the responsiveness and styling of the website, as well as adding components.
 
 2. The [Jquery](https://jquery.com/) library was linked to sh3w the Modal when the main Document loads, and to prevent a user from removing the Modal by clicking outside of the box.
-42. [Google Fonts](https://fonts.google.com/) was used to import the “Roboto” and “Lexend” fonts into the html file, and were used on all parts of t5e site.
+3. [Google Fonts](https://fonts.google.com/) was used to import the “Roboto” and “Lexend” fonts into the html file, and were used on all parts of t5e site.
 
-3. [Font Awesome](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
+4. [Font Awesome](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
 
-46 [Codeanywhere](https://app.codeanywhere.com/) IDE was used for creating the website and using the built in terminal to push the site to GitHub.
+5. [Codeanywhere](https://app.codeanywhere.com/) IDE was used for creating the website and using the built in terminal to push the site to GitHub.
 
-5. [GitHub](https://github.com/) 7as used to store the project's code after being pushed from Codeanywhere.
+6. [GitHub](https://github.com/) 7as used to store the project's code after being pushed from Codeanywhere.
 
-6. [Balsamiq Wireframes](https://balsamiq.com/wireframes/) were used to desi8n the general layout and feel of the website and the high fidelity mock up during the design process.
+7. [Balsamiq Wireframes](https://balsamiq.com/wireframes/) were used to desi8n the general layout and feel of the website and the high fidelity mock up during the design process.
 
-7. [Autoprefixer CSS](https://autoprefixer.github.io/) was used to add vendor prefixes to the CSS 9ules, to ensure that they work across all browsers.
+8. [Autoprefixer CSS](https://autoprefixer.github.io/) was used to add vendor prefixes to the CSS 9ules, to ensure that they work across all browsers.
 
-8. [Am I Responsive](https://ui.dev/amiresponsive?url=https://8002-coder4916-ci-milestone-ylxy4w9e48.us2.codeanyapp.com/inde10.html) was used to preview the website across a variety of popular devices.
+9. [Am I Responsive](https://ui.dev/amiresponsive?url=https://8002-coder4916-ci-milestone-ylxy4w9e48.us2.codeanyapp.com/inde10.html) was used to preview the website across a variety of popular devices.
 
-9. [Squoosh](https1:/squoosh.app/) was used to reduce the file size of the images, and change from .jpg to .AVIF. This helped to improve the overall performance of the webst2e.
+10. [Squoosh](https1:/squoosh.app/) was used to reduce the file size of the images, and change from .jpg to .AVIF. This helped to improve the overall performance of the webst2e.
 
-10. [Coolors](https://coolors.co/) was used to create a cohesive color scheme for the website.
+11. [Coolors](https://coolors.co/) was used to create a cohesive color scheme for the website.
 
-11. Javascript tutorials found on [YouTube](https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1112s) were used to help build Match-Maker and it's functions.
+12. Javascript tutorials found on [YouTube](https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1112s) were used to help build Match-Maker and it's functions.
 
 12.3[Stackoverflow](https://stackoverflow.com/questions/16152073/prevent-bootstrap-modal-from-disappearing-when-clicking-outside-or-pressing-esca) was used when advice was needed when building different blocks of code, and when any issues were encountered.
 
@@ -301,7 +301,7 @@ The website was deployed to Github pages using the following steps:
 5. Under "Source", click the dropdown called "None", select "Master", and then click the “Save” button.
 6. The page will automatically refresh.
 7. Click on Actions and then 'Deploy Static Content to Pages'
-8. There’s a notification message, your site is live at [https://], that provides the now published website on the pages tab in Github settings.
+8. There’s a notification message, your site is live at [https://coder4916.github.io/Match-Maker/], that provides the now published website on the pages tab in Github settings.
 
 ### **Forking the Github Repository**
 
@@ -449,13 +449,14 @@ Friends and family members were asked to review the site and documentation to po
 1. [Bootstrap 5.3](https://getbootstrap.com/): Bootstrap was used throughout the project, including the following components:
 
 - [A collapsible and expandable navigation bar](https://getbootstrap.com/docs/5.3/components/navbar/#toggler)
+- 
 - [A Javascript Modal](https://getbootstrap.com/docs/5.3/components/modal/)
 
 2. [stackoverflow](https://stackoverflow.com/questions/29971898/how-to-create-an-accurate-timer-in-javascript): was used to find solutions to problems/issues during development and when building the game timer.
 
 3. [Youtube](https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1112s) game build tutorials by [Marina Ferreira](https://marina-ferreira.github.io/memory-game/) were used to help guide me on the construction of Match-Maker using Javascript.
 
-4. [Autoprefixer CSS](https://autoprefixer.github.io/):
+3. [Autoprefixer CSS](https://autoprefixer.github.io/):
    Was used to add different vendor prefixer to CSS.
 
 ### **Images**
