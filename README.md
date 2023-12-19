@@ -268,6 +268,8 @@ These features will be added where possible during further development phases:
 
 ## **Issues and Bugs**
 
+-Issue: 'Modal is not a function' was highlighted in the dev tools console window.  
+
 - Issue: The Modal on the playgame page did not work correctly initially when writing JQuery into the Document to reveal the Modal load on startup.
 
 Solution - After carrying out some debugging using Chrome developer tools and some tutoring, it was noticed that the JQuery link/bundle had not been added in the game script.js/html pages.
@@ -402,19 +404,19 @@ Autoprefixer CSS was used to add CSS vendor prefixes to the CSS rules after the 
 
 ## **W3C Validator Testing**
 
-The [W3C Markup Validator](https://validator.w3.org/) and W3C CSS Validator Services were used to validate the website to ensure there were no syntax errors in the project.
+The [W3C Markup Validator](https://validator.w3.org/) and [JSHint](https://jshint.com/) Validator Services were used to validate the website to ensure there were no syntax errors in the project.
 
 The images below are snapshots of each page of the website after the code has been put through the Validator.
 
-![W3C Markup Validator]()
+![Welcome page Validated](/assets/images/homeHtmlValidator.png)
 
-![W3C Markup Validator]()
+![Play Game page Validated](/assets/images/playGameValidator.png)
 
-![W3C Markup Validator]()
+![How to play page Validated](/assets/images/howToPlayHtmlValidator.png)
 
-![W3C Markup Validator]()
+![Style.css Validated](/assets/images/styleCssValidator.png)
 
-The [JSHint](https://jshint.com/) validator tool was used to ensure there were no syntax errors in the script.js file.
+![Script.js file validated](/assets/images/jsLintImage.png)
 
 ## **Lighthouse Testing**
 
