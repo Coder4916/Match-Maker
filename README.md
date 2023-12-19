@@ -1,6 +1,6 @@
 # **Match-Maker**
 
-![Am I Responsive Image]()
+![Am I Responsive Image](https://ui.dev/amiresponsive?url=https://coder4916.github.io/Match-Maker/playGame.html)
 
 ## **Table of Contents**
 
