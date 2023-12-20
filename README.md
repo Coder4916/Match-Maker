@@ -77,31 +77,28 @@ UX research was carried out through discussion with:
 
 #### **First Time User Goals**
 
-1. As a first-time user, I want to be able to play the game I'm looking for quickly and easily and be able to navigate the website with ease.
-1. As a first-time user, I want access to instructions on how to play Match-Maker.
-1. As a first-time user, I want to be able to locate the game's developer's social media links to get in contact or find information on any other game developments.
-1. As a first-time user, I want to be engaged in the game and it's function.
+1. As a first-time user, I want to be able to play the game I'm looking for quickly and easily.
+2. As a first-time user, I want access to instructions on how to play Match-Maker.
+3. As a first-time user, I want to be engaged in the game and it's function.
 
 #### **Returning User Goals**
 
 1. As a returning user, I want to be able to access the game quickly and easily.
 2. As a returning user, I want to be engaged in the game and it's function.
 3. As a returning user, I want access instructions if I need a refresher on how to play the game.
-4. As a returning user, I want to be able to locate the game creator's social media links for information on any other developments or updates.
 
 #### **Frequent User Goal**
 
-1. As a frequent user, I want to be engaged in the game and it's function.
-2. As a frequent user, I want to access game instructions easily.
-3. As a frequent user, I want to be able to contact the owner of the site if required.
+1. As a returning user, I want to be able to access the game quickly and easily.
+2. As a frequent user, I want to be engaged in the game and it's function.
 
 ### **Research**
 
-A lot of research was carried out online, where I played different games in order to identify something which could be educational and entertaining and understand the capability of a javascript platform. Also being actively aware of my daughter's reaction to these games, for example she became particulary interested in the Math game built during the CI module phase. I also considered offline research through general play with my daughter; she enjoys games that are easy to understand and quick to win, such as Snap and Memory.
+A lot of research was carried out online, where I played different games in order to identify something which could be educational and entertaining and understand the capability of a javascript platform. Also being actively aware of my daughter's reaction to these games, for example she became particulary interested in the Math game built during the module phase. I also considered offline research which included spending lots of time with my daughter; she enjoys games that are easy to understand and quick to win, such as Snap and Memory.
 
 - Sector Research
 
-I researched sites that focused on memory games, which helped to guide me on the best approaches, themes and layout for my game.
+I researched sites that focused on card memory games, which helped to guide me on the best approaches, themes and layout for my game.
 
 Examples of sites I reviewed to bolster my research:
 
@@ -144,13 +141,14 @@ Based on the research, goals, and the considerations above, I considered what sh
 | B. Choice of difficulty |     3      |     3     |
 | C. Player vs player     |     3      |     3     |
 | D. Game reviews         |     3      |     2     |
+
 | E. Game timer           |     4      |     5     |
 | F. Game move counter    |     4      |     5     |
 | G. Game score counter   |     4      |     5     |
-| H. Social Media links   |     1      |     4     |
+| H. Social Media links   |     2      |     4     |
 | I. Different themes     |     3      |     3     |
 | J. Gaming links         |     3      |     3     |
-| K. Feedback Form        |     3      |     4     |
+| K. Feedback Form        |     2      |     4     |
 
 ### 2. **Scope Plane**
 
@@ -183,7 +181,7 @@ The fonts I used for the website were sourced from [Google Fonts](https://fonts.
 
 #### **Imagery**
 
-I have utilised free to use images sourced online. A fallback color is included if the main body image doesn't load.
+I have utilised free to use images sourced online. A fallback color is included if the main body image doesn't load. The choice of colors used came from the idea to try and recreate a similar gaming environment to the card game [Patience](https://en.wikipedia.org/wiki/Patience_(game)).
 
 [Back to top](#match-maker)
 
@@ -241,28 +239,29 @@ These features will be added where possible during further development phases:
 
 1. [Bootstrap 5.3](https://getbootstrap.com/) was used to assist with the responsiveness and styling of the website, as well as adding components.
 
-2. The [Jquery](https://jquery.com/) library was linked to sh3w the Modal when the main Document loads, and to prevent a user from removing the Modal by clicking outside of the box.
-3. [Google Fonts](https://fonts.google.com/) was used to import the “Roboto” and “Lexend” fonts into the html file, and were used on all parts of t5e site.
+2. The project uses the [Jquery](https://jquery.com/) library to show the Modal when the main Document loads, and to prevent a user from removing the Modal by clicking outside of the box.
+
+3. [Google Fonts](https://fonts.google.com/) was used to import the “Roboto” and “Lexend” fonts into the html file, and were used on all parts of the site.
 
 4. [Font Awesome](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
 
 5. [Codeanywhere](https://app.codeanywhere.com/) IDE was used for creating the website and using the built in terminal to push the site to GitHub.
 
-6. [GitHub](https://github.com/) 7as used to store the project's code after being pushed from Codeanywhere.
+6. [GitHub](https://github.com/) was used to store the project's code after being pushed from Codeanywhere.
 
-7. [Balsamiq Wireframes](https://balsamiq.com/wireframes/) were used to desi8n the general layout and feel of the website and the high fidelity mock up during the design process.
+7. [Balsamiq Wireframes](https://balsamiq.com/wireframes/) were used to design the general layout and feel of the website and the high fidelity mock up during the design process.
 
-8. [Autoprefixer CSS](https://autoprefixer.github.io/) was used to add vendor prefixes to the CSS 9ules, to ensure that they work across all browsers.
+8. [Autoprefixer CSS](https://autoprefixer.github.io/) was used to add vendor prefixes to the CSS rules, to ensure that they work across all browsers.
 
 9. [Am I Responsive](https://ui.dev/amiresponsive?url=https://8002-coder4916-ci-milestone-ylxy4w9e48.us2.codeanyapp.com/inde10.html) was used to preview the website across a variety of popular devices.
 
-10. [Squoosh](https1:/squoosh.app/) was used to reduce the file size of the images, and change from .jpg to .AVIF. This helped to improve the overall performance of the webst2e.
+10. [Squoosh](https1:/squoosh.app/) was used to reduce the file size of the images, and change from .jpg to .AVIF. This helped to improve the overall performance of the website.
 
 11. [Coolors](https://coolors.co/) was used to create a cohesive color scheme for the website.
 
 12. Javascript tutorials found on [YouTube](https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1112s) were used to help build Match-Maker and it's functions.
 
-12.3[Stackoverflow](https://stackoverflow.com/questions/16152073/prevent-bootstrap-modal-from-disappearing-when-clicking-outside-or-pressing-esca) was used when advice was needed when building different blocks of code, and when any issues were encountered.
+13. [Stackoverflow](https://stackoverflow.com/questions/16152073/prevent-bootstrap-modal-from-disappearing-when-clicking-outside-or-pressing-esca) was used when advice was needed when building different blocks of code, and when any issues were encountered.
 
 [Back to top](#match-maker)
 
@@ -270,9 +269,11 @@ These features will be added where possible during further development phases:
 
 -Issue: 'Modal is not a function' was highlighted in the dev tools console window.
 
-Solution
+Solution - searched online for a solution, and several websites pointed towards getting script files in the document in the correct order. BS bundles deleted, and script order changed, however this hasn't worked so far.
 
-- Issue: When using JsHint, it was found that a ternary expression required fixing 
+- Issue: When using JsHint, it was found that the initial isMatch ternary expression used required fixing for the code to be free of errors.
+
+Solution - After some debugging and re-writing code, I managed to remove isMatch ternary, and replace with suitable Javascript alternative. Game was retested, and was found to work correctly.
 
 - Issue: The Modal on the playgame page did not work correctly initially when writing JQuery into the Document to reveal the Modal load on startup.
 
@@ -288,7 +289,7 @@ Solution - After debugging using Chrome developer tools, I found there was a Boo
 
 - Issue: Ports not working/updating several times on Codeanywhere IDE.
 
-Solution - I regularly had to change the Terminal Port or reset to make the updates to the site work, so I could see the Website's progress. This was sometimes an issue, as I would doubt the reliability of the code I had written, which sidetracked my progress a few times.
+Solution - I regularly had to change the Terminal Port or reset to make the updates to the site work, so I could see the Website's progress. This was sometimes an issue, as I would doubt the reliability of the code I had written, which slowed project progress.
 
 ## **Deployment**
 
@@ -453,14 +454,13 @@ Friends and family members were asked to review the site and documentation to po
 1. [Bootstrap 5.3](https://getbootstrap.com/): Bootstrap was used throughout the project, including the following components:
 
 - [A collapsible and expandable navigation bar](https://getbootstrap.com/docs/5.3/components/navbar/#toggler)
-- 
 - [A Javascript Modal](https://getbootstrap.com/docs/5.3/components/modal/)
 
 2. [stackoverflow](https://stackoverflow.com/questions/29971898/how-to-create-an-accurate-timer-in-javascript): was used to find solutions to problems/issues during development and when building the game timer.
 
 3. [Youtube](https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1112s) game build tutorials by [Marina Ferreira](https://marina-ferreira.github.io/memory-game/) were used to help guide me on the construction of Match-Maker using Javascript.
 
-3. [Autoprefixer CSS](https://autoprefixer.github.io/):
+4. [Autoprefixer CSS](https://autoprefixer.github.io/):
    Was used to add different vendor prefixer to CSS.
 
 ### **Images**
@@ -469,7 +469,7 @@ Friends and family members were asked to review the site and documentation to po
 
 - The card pattern was sourced from[Freepik](https://www.freepik.com/free-vector/watercolor-geometric-background_23849498.htm).
 
-The game's logo was created using [Canva](https://www.canva.com/).
+- The game's logo was created using [Canva](https://www.canva.com/).
 
 ## **Acknowledgements**
 
