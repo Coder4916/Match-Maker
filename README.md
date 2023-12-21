@@ -393,9 +393,16 @@ I used web developer tools extensively throughout the project to update and corr
 
 Below are screenshots of Match-Maker's game page, that I have tested and checked for full responsiveness on all devices. The images show the page at each [Breakpoint](https://getbootstrap.com/docs/5.3/layout/breakpoints/#core-concepts).
 
+Breakpoint: sm
 ![Game at sm breakpoint](/assets/images/playGamePageSm.png)
+
+Breakpoint: md
 ![Game at md breakpoint](/assets/images/playGamePageMd.png)
+
+Breakpoint: lg
 ![Game at lg breakpoint](/assets/images/playGamePageLg.png)
+
+Breakpoint: xl
 ![Game at xl breakpoint](/assets/images/playGamePage.png)
 
 ### **Links Testing**
