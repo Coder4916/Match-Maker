@@ -273,7 +273,7 @@ Solution - searched online for a solution, and several websites pointed towards 
 
 - Issue: I found that there was what looked like an added Bootstrap 'padding' between the Navbar items, which couldn't be removed by overiding CSS padding.
 
-- Solution - After much investigation using Chrome dev tools, it was found to be a Bootstrap box-border class, which once overidden solved the problem. Left padding also needed to be removed to tidy up the CSS hover class.
+Solution - After much investigation using Chrome dev tools, it was found to be a Bootstrap box-border class, which once overidden solved the problem. Left padding also needed to be removed to tidy up the CSS hover class.
 
 - Issue: When using JsHint, it was found that the initial isMatch ternary expression used required fixing for the code to be free of errors.
 
