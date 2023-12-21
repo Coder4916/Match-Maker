@@ -136,3 +136,4 @@ the game is finished:*/
 function reset() {
     window.location.reload();
 }
+

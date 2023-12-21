@@ -17,29 +17,39 @@
 
 <body>
     <header id="game-header">
-        <nav class="navbar navbar-expand-sm fixed-top">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
-                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="col-9 collapse navbar-collapse" id="navbarToggler">
-                <ul class="row g-0 container-fluid navbar-nav navbar-light list-inline text-center">
-                    <li class="col list-inline-item nav-item">
-                        <a href="index.html" class="nav-link hvr-shutter-out-horizontal" aria-current="page"><i
-                                class="fa-solid fa-house" aria-hidden="true"></i><span> Home</span></a>
-                    </li>
-                    <li class="col list-inline-item nav-item">
-                        <a href="playGame.html" class="nav-link hvr-shutter-out-horizontal"><i class="fa-solid fa-play"
-                                aria-hidden="true"></i><span> Play Game</span></a>
-                    </li>
-                    <li class="col list-inline-item nav-item">
-                        <a href="howToPlay.html" class="nav-link hvr-shutter-out-horizontal active"><i
-                                class="fa-solid fa-circle-question" aria-hidden="true"></i><span> How to play</span></a>
-                    </li>
-                </ul>
+        <div class="row g-0">
+            <div class="col">
+                <nav class="navbar navbar-expand-sm fixed-top">
+                    <div class="row g-0 container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#myNavbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="myNavbarToggler">
+                            <ul class="navbar-nav navbar-light list-inline text-center">
+                                <li class="col-4 list-inline-item nav-item">
+                                    <a class="nav-link hvr-shutter-out-horizontal" aria-disabled="true"
+                                        href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i><span>
+                                            Home</span></a>
+                                </li>
+                                <li class="col-4 list-inline-item nav-item">
+                                    <a class="nav-link hvr-shutter-out-horizontal" href="playGame.html"
+                                        aria-disabled="true"><i class="fa-solid fa-play" aria-hidden="true"></i><span> Play
+                                            Game</span></a>
+                                </li>
+                                <li class="col-4 list-inline-item nav-item">
+                                    <a class="nav-link hvr-shutter-out-horizontal active" href="howToPlay.html"
+                                        aria-current="page"><i class="fa-solid fa-circle-question"
+                                            aria-hidden="true"></i><span> How to play</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </div>
+    
     </header>
 
     <div id="how-to-section" class="row g-0 container-fluid">
