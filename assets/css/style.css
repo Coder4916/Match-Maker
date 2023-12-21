@@ -58,7 +58,6 @@ body {
     font-size: 20px;
     color: rgb(231, 223, 223);
     -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
     box-sizing: content-box;
 }
 
@@ -69,7 +68,6 @@ between the a links/li item in the navbar*/
 .nav-item a:before,
 .nav-item a:after {
     -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
     box-sizing: content-box;
 }
 
