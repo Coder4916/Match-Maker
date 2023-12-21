@@ -267,9 +267,13 @@ These features will be added where possible during further development phases:
 
 ## **Issues and Bugs**
 
--Issue: 'Modal is not a function' was highlighted in the dev tools console window.
+- Issue: 'Modal is not a function' was highlighted in the dev tools console window.
 
-Solution - searched online for a solution, and several websites pointed towards getting script files in the document in the correct order. BS bundles deleted, and script order changed, however this hasn't worked so far.
+Solution - searched online for a solution, and several websites pointed towards getting script files in the document in the correct order. Script order changed, and after some tutoring, a minor issue was highlighted with regards to the modal function itself. Re-tested site and found to be working ok.
+
+- Issue: I found that there was what looked like an added Bootstrap 'padding' between the Navbar items, which couldn't be removed by overiding CSS padding.
+
+- Solution - After much investigation using Chrome dev tools, it was found to be a Bootstrap box-border class, which once overidden solved the problem. Left padding also needed to be removed to tidy up the CSS hover class.
 
 - Issue: When using JsHint, it was found that the initial isMatch ternary expression used required fixing for the code to be free of errors.
 
@@ -277,7 +281,7 @@ Solution - After some debugging and re-writing code, I managed to remove isMatch
 
 - Issue: The Modal on the playgame page did not work correctly initially when writing JQuery into the Document to reveal the Modal load on startup.
 
-Solution - After carrying out some debugging using Chrome developer tools and some tutoring, it was noticed that the JQuery link/bundle had not been added in the game script.js/html pages.
+Solution - After carrying out some debugging using Chrome developer tools, it was noticed that the JQuery link/bundle had not been added in the game script.js/html pages.
 
 - Issue: CodeAnywhere load issues, and save/autosave function not working correctly:
 
@@ -344,34 +348,43 @@ By cloning a GitHub Repository you can create a local copy on your computer of t
 
 - The navigation bar is clearly defined, with an .active attribute to display to the user which page they are on. A subtle hover function when the user moves the cursor over the menu items increases user friendliness, and icons are attached to each option to assist the user with their choice.
 
-![Navigation Bar screenshot]()
+![Navigation Bar screenshot and Game Guide](/assets/images/navbarHowToPlayShot.png)
 
 2. As a first-time user, I want access to instructions on how to play Match-Maker.
 
-- The How to play Page includes a game guide to assist new players.
-
-![How to play screenshot]()
+- The How to play Page includes a game guide to assist new players (As above).
 
 3. As a first-time user, I want to be engaged in the game and it's function.
 
 - A score and moves counter are included, as well as a timer to create further engagement.
 
-![Counters and Timer screenshot]()
+![Counters and Timer screenshot](/assets/images/readoutShot.png)
 
 #### **Returning User Goal**
 
 1. As a returning user, I want to be able to access the game quickly and easily.
+
+- As well an accessible Navbar, there is an added link to take the user straight to the game.
+
+![Play Now link](/assets/images/playNowShot.png)
+
 2. As a returning user, I want to be engaged in the game and it's function.
+
+- (See images above) The Readout adds a challenge element to the game.
+
 3. As a returning user, I want access instructions if I need a refresher on how to play the game.
 
-![Returning User Screenshot]()
+- (See images above) The How To Play page addresses this for a returning user.
 
 #### **Frequent Visitor Goal**
 
 1. As a frequent user, I want to be engaged in the game and it's function.
+
+- (See above)
+
 2. As a frequent user, I want to access game instructions easily.
 
-![Frequent User Screenshot]()
+- (See Above)
 
 ## **Manual Testing**
 
@@ -379,12 +392,12 @@ By cloning a GitHub Repository you can create a local copy on your computer of t
 
 I used web developer tools extensively throughout the project to update and correct code, adjust website aesthetics, and check/improve and confirm responsiveness accross all devices, using a Bootstrap 'Mobile First' approach.
 
-Below are screenshots of Match-Maker, that I have tested and checked for full responsiveness on all devices. The images show the game page at each [Breakpoint](https://getbootstrap.com/docs/5.3/layout/breakpoints/#core-concepts).
+Below are screenshots of Match-Maker's game page, that I have tested and checked for full responsiveness on all devices. The images show the page at each [Breakpoint](https://getbootstrap.com/docs/5.3/layout/breakpoints/#core-concepts).
 
-![Game at breakpoint ]()
-![Game at breakpoint ]()
-![Game at breakpoint ]()
-![Game at breakpoint ]()
+![Game at sm breakpoint](/assets/images/playGamePageSm.png)
+![Game at md breakpoint](/assets/images/playGamePageMd.png)
+![Game at lg breakpoint](/assets/images/playGamePageLg.png)
+![Game at xl breakpoint](/assets/images/playGamePage.png)
 
 ### **Links Testing**
 
@@ -416,15 +429,15 @@ The images below are snapshots of each page of the website after the code has be
 
 ## **Lighthouse Testing**
 
-Chrome Lighthouse testing was used to check the performance, accessibility, best practices, and SEO. After applying some changes to make the performance faster, including resizing all of the images and compressing images/ reducing their size, the results below were achieved:
+Chrome Lighthouse testing was used to check the performance, accessibility, best practices, and SEO. After applying some changes to make the performance faster, including resizing all of the images and compressing images/ reducing their size, and adding ARIA labels, the results below were achieved:
 
 - Desktop:
 
-![Match-Maker Lighthouse testing]()
+![Match-Maker Lighthouse testing](/assets/images/desktopLighthouse.png)
 
 - Mobile:
 
-![Match-Maker Lighthouse testing]()
+![Match-Maker Lighthouse testing](/assets/images/mobileLighthouse.png)
 
 ## **Further Testing**
 
