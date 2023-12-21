@@ -161,7 +161,7 @@ by removing Bootstrap padding-left*/
     margin: auto;
     padding-top: 40px;
     text-align: center;
-    background-color: #4b8943;
+    background-color: #2e5529;
     width: 30%;
 }
 
@@ -183,8 +183,8 @@ by removing Bootstrap padding-left*/
     margin: auto;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     -webkit-perspective: 1000px;
     perspective: 1000px;
 }
@@ -253,7 +253,7 @@ h5 {
 
 .modal-body {
     text-align: center;
-    background-color: #4b8943;
+    background-color: #2e5529;
 }
 
 .modal-footer {
@@ -278,7 +278,7 @@ button {
     padding: 15px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
 
     #welcome-section,
     #game-container,

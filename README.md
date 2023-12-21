@@ -352,11 +352,7 @@ By cloning a GitHub Repository you can create a local copy on your computer of t
 
 ![How to play screenshot]()
 
-3. As a first-time user, I want to be able to locate the game's developer's social media links to get in contact or find information on any other game developments.
-
-![Social Media screenshot]()
-
-4. As a first-time user, I want to be engaged in the game and it's function.
+3. As a first-time user, I want to be engaged in the game and it's function.
 
 - A score and moves counter are included, as well as a timer to create further engagement.
 
@@ -367,7 +363,6 @@ By cloning a GitHub Repository you can create a local copy on your computer of t
 1. As a returning user, I want to be able to access the game quickly and easily.
 2. As a returning user, I want to be engaged in the game and it's function.
 3. As a returning user, I want access instructions if I need a refresher on how to play the game.
-4. As a returning user, I want to be able to locate the game creator's social media links for information on any other developments or updates.
 
 ![Returning User Screenshot]()
 
@@ -375,7 +370,6 @@ By cloning a GitHub Repository you can create a local copy on your computer of t
 
 1. As a frequent user, I want to be engaged in the game and it's function.
 2. As a frequent user, I want to access game instructions easily.
-3. As a frequent user, I want to be able to contact the owner of the site if required.
 
 ![Frequent User Screenshot]()
 
@@ -385,15 +379,12 @@ By cloning a GitHub Repository you can create a local copy on your computer of t
 
 I used web developer tools extensively throughout the project to update and correct code, adjust website aesthetics, and check/improve and confirm responsiveness accross all devices, using a Bootstrap 'Mobile First' approach.
 
-Below are some examples of sections that I have tested and checked for full responsiveness on all devices. These images show the sections at each [Breakpoint](https://getbootstrap.com/docs/5.3/layout/breakpoints/#core-concepts).
+Below are screenshots of Match-Maker, that I have tested and checked for full responsiveness on all devices. The images show the game page at each [Breakpoint](https://getbootstrap.com/docs/5.3/layout/breakpoints/#core-concepts).
 
-![Header]()
-
-![Game]()
-
-![Play now link]()
-
-![Footer]()
+![Game at breakpoint ]()
+![Game at breakpoint ]()
+![Game at breakpoint ]()
+![Game at breakpoint ]()
 
 ### **Links Testing**
 

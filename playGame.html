@@ -39,18 +39,18 @@
                             <ul class="navbar-nav navbar-light list-inline text-center">
                                 <li class="col-4 list-inline-item nav-item">
                                     <a class="nav-link hvr-shutter-out-horizontal" aria-disabled="true"
-                                        href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i><span>
+                                        href="index.html"><i class="fa-solid fa-house"></i><span>
                                             Home</span></a>
                                 </li>
                                 <li class="col-4 list-inline-item nav-item">
                                     <a class="nav-link hvr-shutter-out-horizontal active" href="playGame.html"
-                                        aria-current="page"><i class="fa-solid fa-play" aria-hidden="true"></i><span> Play
+                                        aria-current="page"><i class="fa-solid fa-play"></i><span> Play
                                             Game</span></a>
                                 </li>
                                 <li class="col-4 list-inline-item nav-item">
                                     <a class="nav-link hvr-shutter-out-horizontal" href="howToPlay.html"
                                         aria-disabled="true"><i class="fa-solid fa-circle-question"
-                                            aria-hidden="true"></i><span> How to play</span></a>
+                                            ></i><span> How to play</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -66,7 +66,7 @@
 
     <div id="game-container" class="row g-0 container fluid">
       <div id="readout-display" class="col-md-3">
-        <a href="index.html">
+        <a aria-label="Return to Homepage" href="index.html">
           <img
             class="game-logo"
             src="assets/images/ms2-logo.avif"
@@ -360,8 +360,9 @@
       id="modalPageLoad"
       data-bs-backdrop="static"
       data-bs-keyboard="false"
+      aria-label="Start Game Modal"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog" aria-label="Start Game Modal">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">Welcome to Match-Maker</h5>
@@ -394,13 +395,13 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#modalPageLoad").modal("show");
-        $("#modalPageLoad").modal({ backdrop: "static", keyboard: false });
-      });
+    <script role="dialog" aria-labelledby="modal">
+        $(document).ready(function () {
+            $("#modalPageLoad").modal("show");
+            $("#modalPageLoad").modal({ backdrop: "static", keyboard: false });
+        });
     </script>
+    <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/307651c16d.js"
       crossorigin="anonymous"
