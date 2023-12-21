@@ -141,7 +141,6 @@ Based on the research, goals, and the considerations above, I considered what sh
 | B. Choice of difficulty |     3      |     3     |
 | C. Player vs player     |     3      |     3     |
 | D. Game reviews         |     3      |     2     |
-
 | E. Game timer           |     4      |     5     |
 | F. Game move counter    |     4      |     5     |
 | G. Game score counter   |     4      |     5     |
