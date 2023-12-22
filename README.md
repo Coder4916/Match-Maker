@@ -68,10 +68,11 @@ The main requirement of this project is to build a responsive, front end gaming 
 
 ### **1. Strategy Plane**
 
-UX research was carried out through discussion with:
+UX research included:
 
-- Friends and family, specifically my 5 year old daughter.
-- Work colleagues
+- Discussion with friends and family, specifically my 5 year old daughter.
+- Advice from work colleagues, discussing retro memory games they have enjoyed.
+- Online gaming to get a feel for different platforms, and what was included etc.
 
 ### **User Stories**
 
@@ -85,7 +86,7 @@ UX research was carried out through discussion with:
 
 1. As a returning user, I want to be able to access the game quickly and easily.
 2. As a returning user, I want to be engaged in the game and it's function.
-3. As a returning user, I want access instructions if I need a refresher on how to play the game.
+3. As a returning user, I want access to instructions if I need a refresher on how to play the game.
 
 #### **Frequent User Goal**
 
@@ -151,12 +152,12 @@ Based on the research, goals, and the considerations above, I considered what sh
 
 ### 2. **Scope Plane**
 
-Based on the mapping in Strategy Plane, I decided to include these contents below in the website:
+Based on the mapping in the Strategy Plane, I decided to include these contents below in the website:
 
-- Introduction page with logo; Introduces the user to the game site.
-- How to play/gaming Instructions; A guide on how to play Match-Maker.
-- Game score/move counters; Records a users game progress, and adds a further challenge element to the game.
-- Game timer; Again, adds a further challenge element to the game.
+- Introduction page with Logo; Introduces the user to the game site.
+- How to Play/Gaming Instructions; A guide on how to play Match-Maker.
+- Game Score/Move Counters; Records a users game progress, and adds a further challenge element to the game.
+- Game Timer; Again, adds a further challenge element to the game.
 
 ### 3. **Structure Plane**
 
@@ -176,7 +177,7 @@ The color pallette for this site was sourced from [Coolers](https://coolors.co/)
 
 #### **Typography**
 
-The fonts I used for the website were sourced from [Google Fonts](https://fonts.google.com/). [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto) is used for the navbar and paragraphs/general text. This font is recommended for use for people with dysleia [(Tink 'n' Stink)](https://www.tinknstink.co.uk/blogs/news/why-we-use-the-dyslexia-friendly-font-lexend). After researching [commonly used fallback fonts](https://www.w3schools.com/css/css_font_fallbacks.asp), I decided to use serif, sans serif and monospace as Match-Maker's fallbacks.
+The fonts I used for the website were sourced from [Google Fonts](https://fonts.google.com/). [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto) is used for the Navbar and paragraphs/general text. This font is recommended for use for people with dyslexia [(Tink 'n' Stink)](https://www.tinknstink.co.uk/blogs/news/why-we-use-the-dyslexia-friendly-font-lexend). After researching [commonly used fallback fonts](https://www.w3schools.com/css/css_font_fallbacks.asp), I decided to use serif, sans serif and monospace as Match-Maker's fallbacks.
 
 #### **Imagery**
 
@@ -363,7 +364,7 @@ By cloning a GitHub Repository you can create a local copy on your computer of t
 
 1. As a returning user, I want to be able to access the game quickly and easily.
 
-- As well an accessible Navbar, there is an added link to take the user straight to the game.
+- As well an accessible Navbar, there is an added link to take the user straight to the game:
 
 ![Play Now link](/assets/images/playNowShot.png)
 
@@ -393,16 +394,20 @@ I used web developer tools extensively throughout the project to update and corr
 
 Below are screenshots of Match-Maker's game page, that I have tested and checked for full responsiveness on all devices. The images show the page at each [Breakpoint](https://getbootstrap.com/docs/5.3/layout/breakpoints/#core-concepts).
 
-Breakpoint: sm
+Small Breakpoint:
+
 ![Game at sm breakpoint](/assets/images/playGamePageSm.png)
 
-Breakpoint: md
+Medium:
+
 ![Game at md breakpoint](/assets/images/playGamePageMd.png)
 
-Breakpoint: lg
+Large:
+
 ![Game at lg breakpoint](/assets/images/playGamePageLg.png)
 
-Breakpoint: xl
+Xlarge:
+
 ![Game at xl breakpoint](/assets/images/playGamePage.png)
 
 ### **Links Testing**
@@ -484,9 +489,9 @@ Friends and family members were asked to review the site and documentation to po
 ## **Acknowledgements**
 
 - My mentor, Oluwaseun Owonikoko, for her guidance and helpful feedback on all aspects of the Website.
+- My Peers and Stand Up Team for their help and guidance.
 - The Code Institute tutors who helped me with several of the issues I had when building the game site.
 - My Daughter Evelyn, for testing the game (several times) and helping to make sure the game worked properly!
 - My wife Beth for her constant support throughout the second module, and for proof reading my Readme and testing my game material.
-- Peer Code Review
 
 [Back to top](#match-maker)
