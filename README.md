@@ -269,11 +269,11 @@ These features will be added where possible during further development phases:
 
 - Issue: 'Modal is not a function' was highlighted in the dev tools console window.
 
-Solution - searched online for a solution, and several websites pointed towards getting script files in the document in the correct order. Script order changed, and after some tutoring, a minor issue was highlighted with regards to the modal function itself. Re-tested site and found to be working ok.
+Solution - searched [online](https://stackoverflow.com/questions/25757968/bootstrap-modal-is-not-a-function) for a solution, and several websites pointed towards getting script files in the document in the correct order. Script order changed, and after some tutoring, a minor issue was highlighted with regards to the modal function itself. Re-tested site and found to be working ok.
 
 - Issue: I found that there was what looked like an added Bootstrap 'padding' between the Navbar items, which couldn't be removed by overiding CSS padding.
 
-Solution - After much investigation using Chrome dev tools, it was found to be a Bootstrap box-border class, which once overidden solved the problem. Left padding also needed to be removed to tidy up the CSS hover class.
+Solution - After much investigation using Chrome dev tools and [research-online](https://stackoverflow.com/questions/34790054/css-disable-bootstrap-box-sizing), it was found to be a Bootstrap box-border class, which once overidden solved the problem. Left padding also needed to be removed to tidy up the CSS hover class.
 
 - Issue: When using JsHint, it was found that the initial isMatch ternary expression used required fixing for the code to be free of errors.
 
@@ -289,7 +289,7 @@ Solution - Copied code back to CodeAnywhere from Github. Some code had to be re-
 
 - Issue: Bootstrap color automatically added when using it's active class for the navigation bar. The CodeAnywhere terminal highlighted the fact that using !Important was not a foolproof way of writing code, and should not be used if possible.
 
-Solution - After debugging using Chrome developer tools, I found there was a Bootstrap color added to the navigation bar, which could be overidden using the .navbar-nav .nav-link.active class. CSS !Important attribute was removed from code and color of navigation bar text was changed.
+Solution - After debugging using Chrome developer tools, I found there was a Bootstrap color added to the navigation bar, which could be [overidden](https://stackoverflow.com/questions/16084209/how-can-i-disable-the-bootstrap-hover-color-for-links) using the .navbar-nav .nav-link.active class. CSS !Important attribute was removed from code and color of navigation bar text was changed.
 
 - Issue: Ports not working/updating several times on Codeanywhere IDE.
 
@@ -475,7 +475,9 @@ Friends and family members were asked to review the site and documentation to po
 
 3. [Youtube](https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1112s) game build tutorials by [Marina Ferreira](https://marina-ferreira.github.io/memory-game/) were used to help guide me on the construction of Match-Maker using Javascript.
 
-4. [Autoprefixer CSS](https://autoprefixer.github.io/):
+4. I also sought some inspiration and ideas from the Projects highlighted in Slack during stand up meetings. [Quickshot](https://ofemiashiru.github.io/CI_MS2_QSG/index.html) gave me some ideas for page layouts etc.
+
+5. [Autoprefixer CSS](https://autoprefixer.github.io/):
    Was used to add different vendor prefixer to CSS.
 
 ### **Images**
@@ -489,7 +491,7 @@ Friends and family members were asked to review the site and documentation to po
 ## **Acknowledgements**
 
 - My mentor, Oluwaseun Owonikoko, for her guidance and helpful feedback on all aspects of the Website.
-- My Peers and Stand Up Team for their help and guidance.
+- My CI peers and stand up team for their help and guidance.
 - The Code Institute tutors who helped me with several of the issues I had when building the game site.
 - My Daughter Evelyn, for testing the game (several times) and helping to make sure the game worked properly!
 - My wife Beth for her constant support throughout the second module, and for proof reading my Readme and testing my game material.

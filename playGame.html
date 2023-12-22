@@ -52,8 +52,10 @@
 
     </header>
 
-    <!-- The div container below contains all card elements required, which javascript will use to create the memory game
-    A readout display is also included which will show the player's moves taken, score/matched cards and time taken -->
+    <!-- The div container below contains all card elements required, 
+        which javascript will use to create the memory game
+    A readout display is also included which will show the player's 
+    moves taken, score/matched cards and time taken -->
 
     <div id="game-container" class="row g-0 container fluid">
         <div id="readout-display" class="col-md-3">
@@ -72,7 +74,7 @@
                 <i class="fa-solid fa-angles-right"></i><span class="moves"> Moves: 0</span>
             </div>
 
-            <!-- A reset game button, imported from bootstrap -->
+            <!-- A reset game button, imported from Bootstrap -->
 
             <div class="text-center">
                 <button id="reset-game-btn" data-type="reset-game" type="button" class="btn btn-success">
@@ -80,6 +82,8 @@
                 </button>
             </div>
         </div>
+
+        <!-- A Game Grid, built with the guidance from tutorials on Youtube -->
 
         <div id="game-grid" class="col-md-9">
             <div class="card" data-shape="circle">
@@ -171,7 +175,7 @@
         </p>
     </footer>
 
-    <!-- A Modal with start game button, imported from bootstrap -->
+    <!-- A Modal with start game button, imported from Bootstrap 5.3-->
 
     <div class="modal" tabindex="-1" id="modalPageLoad" data-bs-backdrop="static" data-bs-keyboard="false">
         <div class="modal-dialog">
@@ -193,7 +197,7 @@
         </div>
     </div>
 
-    <!-- Imported javascript from Bootstrap, Fontawesome and script.js. -->
+    <!-- Imported javascript from Bootstrap, Jquery, Fontawesome and script.js. -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

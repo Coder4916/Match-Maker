@@ -10,6 +10,7 @@ let lockBoard = false;
 firstCard and secondCard:*/
 let firstCard;
 let secondCard;
+
 let myInterval;
 let moves = 0;
 let score = 0;
